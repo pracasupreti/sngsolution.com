@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNG Solution Pvt. Ltd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+</head>
+<body>
+
+  <!-- nav header start  -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.htm"> <img src="images/navbar/sng-logo.png" alt="nav logo" height="100px" width="300px"> </a>
+            <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#nav-bar">
+                <span class="sr-only"> Switch Menu </span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex    justify-content-between" id="nav-bar">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.htm"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.htm"> About </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                            Events
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="upcoming-events.htm"> Upcoming Events </a>
+                            <a class="dropdown-item" href="past-events.htm"> Past Events </a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.htm"> Team </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.htm">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.htm"> Contact </a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="request.htm"><button class="btn btn-secondary rounded-pill">Request a Training</button></a>
+                    </li>
+                
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    
+<!-- header start -->
+<nav class="border-gray-200 bg-gray-50 ">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="index.htm" class="flex items-center space-x-3 rtl:space-x-reverse px-auto">
+        <img src="images/navbar/sng-logo.png" class="h-[100px]" alt="Flowbite Logo" />
+    </a>
+    <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-solid-bg" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+      <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+        <li>
+            <a href="index.htm" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700">Home</a>
+          </li>
+          <li>
+            <a href="About.htm" class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700" aria-current="page">About</a>
+          </li>
+        <li>
+          <a href="events.htm" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700">Events</a>
+        </li>
+        <li>
+          <a href="team.htm" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700">Team</a>
+        </li>
+        <li>
+          <a href="testimonials.htm" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700">Testimonials</a>
+        </li>
+        <li>
+          <a href="contact.htm" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- header end  -->
+
+<section class="container mx-auto p-10 md:py-20 px-0 md:p-10 md:px-0">
+    <section class="relative px-10 md:p-0 transform duration-500 hover:shadow-2xl cursor-pointer hover:-translate-y-1 ">
+        <img class="xl:max-w-6xl rounded" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About">
+        <div class="content bg-white p-2 pt-8 md:p-12 pb-12 lg:max-w-lg w-full lg:absolute top-48 right-5">
+            <h2 class="text-3xl font-semibold mt-4 md:mt-4">About Us</h2>
+            <p class="my-3 text-justify font-medium text-gray-700 leading-relaxed">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Autem aperiam nulla cupiditate saepe sed quis veritatis minus rem adipisci
+                aliquid.</p>
+            <button class="mt-2 md:mt-5 p-3 px-5 bg-black text-white font-bold text-sm hover:bg-purple-800">Read
+          More</button>
+        </div>
+    </section>
+</section>
+
+
+
+<div class="container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:mx-14">
+        <!-- Who We Are Section -->
+        <div class="mx-5">
+            <h2 class="text-2xl font-semibold mb-4">Who We Are</h2>
+            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+        </div>
+        <!-- Why Choose Us Section -->
+        <div class="mt-8 md:mt-20 mx-5">
+            <h2 class="text-2xl font-semibold mb-4">Why Choose Us</h2>
+            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+        </div>
+    </div>
+</div>
+   
+<div class="min-h-screen flex flex-col p-8 sm:p-16 md:p-24 justify-center bg-white md:mx-4">
+   
+    <div data-theme="teal" class="mx-auto max-w-6xl">
+      <h2 class="sr-only">Featured case study</h2>
+      <section class="font-sans text-black">
+        <div class="[ lg:flex lg:items-center ] [ fancy-corners fancy-corners--large fancy-corners--top-left fancy-corners--bottom-right ]">
+            <!-- image section  -->
+          <div class="flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60">
+            <div class="h-full">
+              <article class="h-full">
+                <div class="h-full">
+                  <img class="h-full object-cover rounded-md" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="733" height="412" alt='""' typeof="foaf:Image" />
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- description section  -->
+          <div class="p-6 bg-grey">
+            <div class="leading-relaxed">
+              <h2 class="leading-tight text-4xl font-bold">Lorem ipsum dolor sit amet</h2>
+              <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+              <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+              <p><a class="mt-4 button button--secondary" href="https://inviqa.com/cxcon-experience-transformation">Explore this event</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- mission vision block section  -->
+  <div class="relative bg-cover bg-center h-screen md:px-20" style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative container mx-auto px-6 py-12 text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Lorem ipsum dolor sit amet, <br> con sect etuer adipiscing elit.</h2>
+        <p class="text-base md:text-lg mb-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        </p>
+        <p class="text-base md:text-lg mb-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg text-center">
+                <img src="path/to/icon1.png" alt="Icon 1" class="mx-auto mb-4">
+                <h3 class="text-lg md:text-xl font-semibold">Lorem Ipsum</h3>
+            </div>
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg text-center">
+                <img src="path/to/icon2.png" alt="Icon 2" class="mx-auto mb-4">
+                <h3 class="text-lg md:text-xl font-semibold">Lorem Ipsum</h3>
+            </div>
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg text-center">
+                <img src="path/to/icon3.png" alt="Icon 3" class="mx-auto mb-4">
+                <h3 class="text-lg md:text-xl font-semibold">Lorem Ipsum</h3>
+            </div>
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg text-center">
+                <img src="path/to/icon4.png" alt="Icon 4" class="mx-auto mb-4">
+                <h3 class="text-lg md:text-xl font-semibold">Lorem Ipsum</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- out team section  -->
+<div class="bg-gray-100 h-screen">
+    <div class="py-10 max-w-screen-lg mx-28">
+        <div class="text-left mb-16">
+            <p class="mt-4 text-sm leading-7 text-gray-500 font-regular">
+                THE TEAM
+            </p>
+            <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
+                Our<span class="text-indigo-600"> Team</span>
+            </h3>
+        </div>
+
+
+        <div class="grid grid-cols-3 col-gap-10">
+
+            <div class="text-center bg-white">
+                <img class="w-100" src="https://images.pexels.com/photos/1587014/pexels-photo-1587014.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500">
+                <div class="p-4">
+                    <div class="text-md">
+                        <a href="#"
+                            class="hover:text-indigo-500 text-gray-900 font-semibold transition duration-500 ease-in-out">Mehdi
+                            Mohammadi</a>
+                        <p class="text-gray-500 uppercase text-sm">Web developer</p>
+                    </div>
+                    <div class="my-4 flex justify-center items-center">
+                        <a href="#">
+
+                            <svg class="mr-3" width="18px" height="18px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g data-name="Layer 2">
+                                    <g data-name="facebook">
+                                        <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                                        <path
+                                            d="M17 3.5a.5.5 0 0 0-.5-.5H14a4.77 4.77 0 0 0-5 4.5v2.7H6.5a.5.5 0 0 0-.5.5v2.6a.5.5 0 0 0 .5.5H9v6.7a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-6.7h2.62a.5.5 0 0 0 .49-.37l.72-2.6a.5.5 0 0 0-.48-.63H13V7.5a1 1 0 0 1 1-.9h2.5a.5.5 0 0 0 .5-.5z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></a>
+                        <a href="#">
+                            <svg class="mr-3" width="16px" height="16px" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;"
+                                xml:space="preserve">
+                                <g id="XMLID_826_">
+                                    <path id="XMLID_827_" d="M302.973,57.388c-4.87,2.16-9.877,3.983-14.993,5.463c6.057-6.85,10.675-14.91,13.494-23.73
+		c0.632-1.977-0.023-4.141-1.648-5.434c-1.623-1.294-3.878-1.449-5.665-0.39c-10.865,6.444-22.587,11.075-34.878,13.783
+		c-12.381-12.098-29.197-18.983-46.581-18.983c-36.695,0-66.549,29.853-66.549,66.547c0,2.89,0.183,5.764,0.545,8.598
+		C101.163,99.244,58.83,76.863,29.76,41.204c-1.036-1.271-2.632-1.956-4.266-1.825c-1.635,0.128-3.104,1.05-3.93,2.467
+		c-5.896,10.117-9.013,21.688-9.013,33.461c0,16.035,5.725,31.249,15.838,43.137c-3.075-1.065-6.059-2.396-8.907-3.977
+		c-1.529-0.851-3.395-0.838-4.914,0.033c-1.52,0.871-2.473,2.473-2.513,4.224c-0.007,0.295-0.007,0.59-0.007,0.889
+		c0,23.935,12.882,45.484,32.577,57.229c-1.692-0.169-3.383-0.414-5.063-0.735c-1.732-0.331-3.513,0.276-4.681,1.597
+		c-1.17,1.32-1.557,3.16-1.018,4.84c7.29,22.76,26.059,39.501,48.749,44.605c-18.819,11.787-40.34,17.961-62.932,17.961
+		c-4.714,0-9.455-0.277-14.095-0.826c-2.305-0.274-4.509,1.087-5.294,3.279c-0.785,2.193,0.047,4.638,2.008,5.895
+		c29.023,18.609,62.582,28.445,97.047,28.445c67.754,0,110.139-31.95,133.764-58.753c29.46-33.421,46.356-77.658,46.356-121.367
+		c0-1.826-0.028-3.67-0.084-5.508c11.623-8.757,21.63-19.355,29.773-31.536c1.237-1.85,1.103-4.295-0.33-5.998
+		C307.394,57.037,305.009,56.486,302.973,57.388z"></path>
+                                </g>
+                            </svg></a>
+
+                        <a href="#">
+                            <svg width="19px" height="19px" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 239.04 239.04" style="enable-background:new 0 0 239.04 239.04;"
+                                xml:space="preserve">
+                                <g>
+                                    <path style="fill:#FFFFFF;" d="M167.809,36.555c-22.276-0.183-44.597-1.054-66.919-0.504c-25.851,0.642-46.018,2.2-61.281,22.872
+		c-3.988,9.854-6.004,21.359-6.967,33.368c-0.183,3.163-0.367,6.417-0.596,9.763c-0.825,20.396,0.55,41.435,0.092,58.118
+		c2.154,10.955,6.371,20.809,14.255,28.326c26.126,24.888,79.294,17.142,114.128,15.767c16.73-6.096,30.663-11.138,38.134-30.251
+		c5.913-15.034,4.95-34.193,5.363-50.326C204.797,90.502,206.264,44.714,167.809,36.555z"></path>
+                                    <path d="M157.588,48.38c44.505,5.729,31.443,70.219,30.205,101.478c-0.688,17.188-3.758,30.48-21.496,36.438
+		c-23.33,7.838-57.706,5.225-81.494,1.742c-15.905-2.292-28.372-7.059-32.772-23.559c-6.967-26.08-4.996-61.373-1.971-87.957
+		c0.092-0.504,0.229-0.871,0.458-1.192C50.93,35.547,134.441,45.401,157.588,48.38z"></path>
+                                    <path style="fill:#FFFFFF;" d="M176.059,72.627c0.092-10.955-13.567-14.438-20.901-7.7c-1.971,1.833-2.888,4.629-3.025,7.654
+		c0.733,3.896,3.071,7.746,6.096,9.946C165.334,87.523,175.967,80.877,176.059,72.627z"></path>
+                                    <path style="fill:#FFFFFF;"
+                                        d="M155.754,93.94c-15.675-23.742-51.06-26.08-70.081-5.042c-12.971,14.346-13.888,38.226-4.125,55.185
+		c0.55,0.183,1.054,0.504,1.513,1.054c15.859,17.692,43.176,24.109,62.794,8.067C163.363,138.858,168.496,113.236,155.754,93.94z"></path>
+                                    <path d="M93.282,126.483c5.546,15.584,25.255,27.959,40.976,18.334c31.763-19.434-5.546-72.235-31.718-48.814
+		C93.282,101.457,89.661,116.261,93.282,126.483z"></path>
+                                </g>
+                            </svg></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center bg-white">
+                <img class="w-100" src="https://images.pexels.com/photos/2897883/pexels-photo-2897883.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500">
+                <div class="p-4">
+                    <div class="text-md">
+                        <a href="#"
+                            class="hover:text-indigo-500 text-gray-900 font-semibold transition duration-500 ease-in-out">Yahya
+                            R. Makarim</a>
+                        <p class="text-gray-500 uppercase text-sm">president &amp; CEO</p>
+                    </div>
+                    <div class="my-4 flex justify-center items-center">
+                        <a href="#">
+
+                            <svg class="mr-3" width="18px" height="18px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g data-name="Layer 2">
+                                    <g data-name="facebook">
+                                        <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                                        <path
+                                            d="M17 3.5a.5.5 0 0 0-.5-.5H14a4.77 4.77 0 0 0-5 4.5v2.7H6.5a.5.5 0 0 0-.5.5v2.6a.5.5 0 0 0 .5.5H9v6.7a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-6.7h2.62a.5.5 0 0 0 .49-.37l.72-2.6a.5.5 0 0 0-.48-.63H13V7.5a1 1 0 0 1 1-.9h2.5a.5.5 0 0 0 .5-.5z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></a>
+                        <a href="#">
+                            <svg class="mr-3" width="16px" height="16px" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;"
+                                xml:space="preserve">
+                                <g id="XMLID_826_">
+                                    <path id="XMLID_827_" d="M302.973,57.388c-4.87,2.16-9.877,3.983-14.993,5.463c6.057-6.85,10.675-14.91,13.494-23.73
+		c0.632-1.977-0.023-4.141-1.648-5.434c-1.623-1.294-3.878-1.449-5.665-0.39c-10.865,6.444-22.587,11.075-34.878,13.783
+		c-12.381-12.098-29.197-18.983-46.581-18.983c-36.695,0-66.549,29.853-66.549,66.547c0,2.89,0.183,5.764,0.545,8.598
+		C101.163,99.244,58.83,76.863,29.76,41.204c-1.036-1.271-2.632-1.956-4.266-1.825c-1.635,0.128-3.104,1.05-3.93,2.467
+		c-5.896,10.117-9.013,21.688-9.013,33.461c0,16.035,5.725,31.249,15.838,43.137c-3.075-1.065-6.059-2.396-8.907-3.977
+		c-1.529-0.851-3.395-0.838-4.914,0.033c-1.52,0.871-2.473,2.473-2.513,4.224c-0.007,0.295-0.007,0.59-0.007,0.889
+		c0,23.935,12.882,45.484,32.577,57.229c-1.692-0.169-3.383-0.414-5.063-0.735c-1.732-0.331-3.513,0.276-4.681,1.597
+		c-1.17,1.32-1.557,3.16-1.018,4.84c7.29,22.76,26.059,39.501,48.749,44.605c-18.819,11.787-40.34,17.961-62.932,17.961
+		c-4.714,0-9.455-0.277-14.095-0.826c-2.305-0.274-4.509,1.087-5.294,3.279c-0.785,2.193,0.047,4.638,2.008,5.895
+		c29.023,18.609,62.582,28.445,97.047,28.445c67.754,0,110.139-31.95,133.764-58.753c29.46-33.421,46.356-77.658,46.356-121.367
+		c0-1.826-0.028-3.67-0.084-5.508c11.623-8.757,21.63-19.355,29.773-31.536c1.237-1.85,1.103-4.295-0.33-5.998
+		C307.394,57.037,305.009,56.486,302.973,57.388z"></path>
+                                </g>
+                            </svg></a>
+
+                        <a href="#">
+                            <svg width="19px" height="19px" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 239.04 239.04" style="enable-background:new 0 0 239.04 239.04;"
+                                xml:space="preserve">
+                                <g>
+                                    <path style="fill:#FFFFFF;" d="M167.809,36.555c-22.276-0.183-44.597-1.054-66.919-0.504c-25.851,0.642-46.018,2.2-61.281,22.872
+		c-3.988,9.854-6.004,21.359-6.967,33.368c-0.183,3.163-0.367,6.417-0.596,9.763c-0.825,20.396,0.55,41.435,0.092,58.118
+		c2.154,10.955,6.371,20.809,14.255,28.326c26.126,24.888,79.294,17.142,114.128,15.767c16.73-6.096,30.663-11.138,38.134-30.251
+		c5.913-15.034,4.95-34.193,5.363-50.326C204.797,90.502,206.264,44.714,167.809,36.555z"></path>
+                                    <path d="M157.588,48.38c44.505,5.729,31.443,70.219,30.205,101.478c-0.688,17.188-3.758,30.48-21.496,36.438
+		c-23.33,7.838-57.706,5.225-81.494,1.742c-15.905-2.292-28.372-7.059-32.772-23.559c-6.967-26.08-4.996-61.373-1.971-87.957
+		c0.092-0.504,0.229-0.871,0.458-1.192C50.93,35.547,134.441,45.401,157.588,48.38z"></path>
+                                    <path style="fill:#FFFFFF;" d="M176.059,72.627c0.092-10.955-13.567-14.438-20.901-7.7c-1.971,1.833-2.888,4.629-3.025,7.654
+		c0.733,3.896,3.071,7.746,6.096,9.946C165.334,87.523,175.967,80.877,176.059,72.627z"></path>
+                                    <path style="fill:#FFFFFF;"
+                                        d="M155.754,93.94c-15.675-23.742-51.06-26.08-70.081-5.042c-12.971,14.346-13.888,38.226-4.125,55.185
+		c0.55,0.183,1.054,0.504,1.513,1.054c15.859,17.692,43.176,24.109,62.794,8.067C163.363,138.858,168.496,113.236,155.754,93.94z"></path>
+                                    <path d="M93.282,126.483c5.546,15.584,25.255,27.959,40.976,18.334c31.763-19.434-5.546-72.235-31.718-48.814
+		C93.282,101.457,89.661,116.261,93.282,126.483z"></path>
+                                </g>
+                            </svg></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center bg-white">
+                <img class="w-100" src="https://images.pexels.com/photos/3778680/pexels-photo-3778680.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500">
+                <div class="p-4">
+                    <div class="text-md">
+                        <a href="#"
+                            class="hover:text-indigo-500 text-gray-900 font-semibold transition duration-500 ease-in-out">Ahmad
+                            Sultani</a>
+                        <p class="text-gray-500 uppercase text-sm">Web designer</p>
+                    </div>
+                    <div class="my-4 flex justify-center items-center">
+                        <a href="#">
+
+                            <svg class="mr-3" width="18px" height="18px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g data-name="Layer 2">
+                                    <g data-name="facebook">
+                                        <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect>
+                                        <path
+                                            d="M17 3.5a.5.5 0 0 0-.5-.5H14a4.77 4.77 0 0 0-5 4.5v2.7H6.5a.5.5 0 0 0-.5.5v2.6a.5.5 0 0 0 .5.5H9v6.7a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-6.7h2.62a.5.5 0 0 0 .49-.37l.72-2.6a.5.5 0 0 0-.48-.63H13V7.5a1 1 0 0 1 1-.9h2.5a.5.5 0 0 0 .5-.5z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></a>
+                        <a href="#">
+                            <svg class="mr-3" width="16px" height="16px" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;"
+                                xml:space="preserve">
+                                <g id="XMLID_826_">
+                                    <path id="XMLID_827_" d="M302.973,57.388c-4.87,2.16-9.877,3.983-14.993,5.463c6.057-6.85,10.675-14.91,13.494-23.73
+		c0.632-1.977-0.023-4.141-1.648-5.434c-1.623-1.294-3.878-1.449-5.665-0.39c-10.865,6.444-22.587,11.075-34.878,13.783
+		c-12.381-12.098-29.197-18.983-46.581-18.983c-36.695,0-66.549,29.853-66.549,66.547c0,2.89,0.183,5.764,0.545,8.598
+		C101.163,99.244,58.83,76.863,29.76,41.204c-1.036-1.271-2.632-1.956-4.266-1.825c-1.635,0.128-3.104,1.05-3.93,2.467
+		c-5.896,10.117-9.013,21.688-9.013,33.461c0,16.035,5.725,31.249,15.838,43.137c-3.075-1.065-6.059-2.396-8.907-3.977
+		c-1.529-0.851-3.395-0.838-4.914,0.033c-1.52,0.871-2.473,2.473-2.513,4.224c-0.007,0.295-0.007,0.59-0.007,0.889
+		c0,23.935,12.882,45.484,32.577,57.229c-1.692-0.169-3.383-0.414-5.063-0.735c-1.732-0.331-3.513,0.276-4.681,1.597
+		c-1.17,1.32-1.557,3.16-1.018,4.84c7.29,22.76,26.059,39.501,48.749,44.605c-18.819,11.787-40.34,17.961-62.932,17.961
+		c-4.714,0-9.455-0.277-14.095-0.826c-2.305-0.274-4.509,1.087-5.294,3.279c-0.785,2.193,0.047,4.638,2.008,5.895
+		c29.023,18.609,62.582,28.445,97.047,28.445c67.754,0,110.139-31.95,133.764-58.753c29.46-33.421,46.356-77.658,46.356-121.367
+		c0-1.826-0.028-3.67-0.084-5.508c11.623-8.757,21.63-19.355,29.773-31.536c1.237-1.85,1.103-4.295-0.33-5.998
+		C307.394,57.037,305.009,56.486,302.973,57.388z"></path>
+                                </g>
+                            </svg></a>
+
+                        <a href="#">
+                            <svg width="19px" height="19px" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 239.04 239.04" style="enable-background:new 0 0 239.04 239.04;"
+                                xml:space="preserve">
+                                <g>
+                                    <path style="fill:#FFFFFF;" d="M167.809,36.555c-22.276-0.183-44.597-1.054-66.919-0.504c-25.851,0.642-46.018,2.2-61.281,22.872
+		c-3.988,9.854-6.004,21.359-6.967,33.368c-0.183,3.163-0.367,6.417-0.596,9.763c-0.825,20.396,0.55,41.435,0.092,58.118
+		c2.154,10.955,6.371,20.809,14.255,28.326c26.126,24.888,79.294,17.142,114.128,15.767c16.73-6.096,30.663-11.138,38.134-30.251
+		c5.913-15.034,4.95-34.193,5.363-50.326C204.797,90.502,206.264,44.714,167.809,36.555z"></path>
+                                    <path d="M157.588,48.38c44.505,5.729,31.443,70.219,30.205,101.478c-0.688,17.188-3.758,30.48-21.496,36.438
+		c-23.33,7.838-57.706,5.225-81.494,1.742c-15.905-2.292-28.372-7.059-32.772-23.559c-6.967-26.08-4.996-61.373-1.971-87.957
+		c0.092-0.504,0.229-0.871,0.458-1.192C50.93,35.547,134.441,45.401,157.588,48.38z"></path>
+                                    <path style="fill:#FFFFFF;" d="M176.059,72.627c0.092-10.955-13.567-14.438-20.901-7.7c-1.971,1.833-2.888,4.629-3.025,7.654
+		c0.733,3.896,3.071,7.746,6.096,9.946C165.334,87.523,175.967,80.877,176.059,72.627z"></path>
+                                    <path style="fill:#FFFFFF;"
+                                        d="M155.754,93.94c-15.675-23.742-51.06-26.08-70.081-5.042c-12.971,14.346-13.888,38.226-4.125,55.185
+		c0.55,0.183,1.054,0.504,1.513,1.054c15.859,17.692,43.176,24.109,62.794,8.067C163.363,138.858,168.496,113.236,155.754,93.94z"></path>
+                                    <path d="M93.282,126.483c5.546,15.584,25.255,27.959,40.976,18.334c31.763-19.434-5.546-72.235-31.718-48.814
+		C93.282,101.457,89.661,116.261,93.282,126.483z"></path>
+                                </g>
+                            </svg></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+    <!-- footer section starts here -->
+     <section>
+        <!-- Footer -->
+
+        <!-- <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css"> -->
+        <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+        
+        <footer class="relative bg-gray-200 pt-8 pb-6 mt-14">
+          <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+              <div class="w-full lg:w-6/12 px-4">
+                  <img src="images/footer/sng-logo.png" alt="Logo" class="h-[100px] w-[250px] mr-3">
+                <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+                  we are committed to excellence in educational consultancy, research, and innovative solutions.
+                </h5>
+                <div class="mt-6 lg:mb-0 mb-6">
+                  <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                    <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                    <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                    <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                    <i class="fab fa-github"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="w-full lg:w-6/12 px-4">
+                <div class="flex flex-wrap items-top mb-6">
+                  <div class="w-full lg:w-4/12 px-4 ml-auto">
+                    <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="about.htm">About Us</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="blog.htm">Blog</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="team.htm">Team</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="contact.htm">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="w-full lg:w-4/12 px-4">
+                    <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">MIT License</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Terms &amp; Conditions</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Privacy Policy</a>
+                      </li>
+                      <li>
+                        <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+              <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                <div class="text-sm text-blueGray-500 font-semibold py-1">
+                  Copyright © 2024 <a href="https://www.sngsolution.com" class="text-blueGray-500 hover:text-blue-500" target="_blank"> SNGSolution.com
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>    
+
+  <!-- Footer -->
+</section>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSGFpoO/ufreqqF6MVu4JdG7PhIxZlW8sSJv43gkdSHlua9DmM/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-V7Eu9XfJ5J1/yJ31eMU1Dm+g/gzjt6M1yUYKc+eTaQKJdY+lz9CqLQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-p5I9iYqMbKJw5+vAuZ9T3dPSz wed8I8Lqko6dGn4/P8k9ctFsiv5gYusI4WU+k=" crossorigin="anonymous"></script> -->
+</body>
+</html>

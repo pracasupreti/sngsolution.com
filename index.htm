@@ -8,7 +8,7 @@
     
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
 </head>
-<body>
+<body style="background-color: #eef1f3;">
 
   <!-- nav header start  -->
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -118,11 +118,198 @@
 </article>
 <!-- Hero end -->
 
+<!-- blocks  -->
+<section>
+  <div class="flex flex-col md:flex-row justify-center space-x-0 md:space-x-4 my-10">
+    <div class="flex flex-col md:flex-row justify-center space-x-0 md:space-x-4 space-y-4 md:space-y-0">
+      <div class="flex items-center border-2 px-6 md:px-10 py-3 space-x-4 rounded-xl">
+        <img width="64" height="64" src="https://img.icons8.com/external-phatplus-lineal-phatplus/64/external-learning-intelligent-center-phatplus-lineal-phatplus.png" alt="external-learning-intelligent-center-phatplus-lineal-phatplus"/>
+        <div>
+          <p class="font-bold">Learn Skills</p>
+          <p>With unlimited courses</p>
+        </div>
+      </div>
+
+      <div class="flex items-center border-2 px-6 md:px-10 py-3 space-x-4 rounded-xl border-b-4 border-blue-400">
+        <img width="64" height="64" src="https://img.icons8.com/external-justicon-lineal-justicon/64/external-certificate-awards-justicon-lineal-justicon.png" alt="external-certificate-awards-justicon-lineal-justicon"/>
+       <div class="flex flex-col"> 
+        <p class="font-bold">Certificate</p>
+        <p>Value all over the world</p> 
+       </div>
+      </div>
+
+      <div class="flex items-center border-2 px-6 md:px-10 py-3 space-x-4 rounded-xl">
+        <img width="66" height="66" src="https://img.icons8.com/external-outline-design-circle/66/external-Expert-user-seo-development-and-marketing-outline-design-circle.png" alt="external-Expert-user-seo-development-and-marketing-outline-design-circle"/>
+        <div>
+          <p class="font-bold">Expert Guidance</p>
+          <p>Best and high qualified</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 <!--content part-->
 <div class="mx-7 mt-3 md:mx-16 md:mt-8">
-<p class="mb-3 text-[22px] text-gray-500 md:text-3xl">Welcome to SNG Solutions Pvt Ltd</p>
-<p class="text-gray-500 text-md md:text-lg">At SNG Solutions Pvt Ltd, we are committed to excellence in educational consultancy, research, and innovative solutions. Our dedicated team of experts is here to guide you through the intricate world of academia and beyond. Explore our diverse range of services designed to empower individuals, institutions, and businesses alike.</p>
+  <p class="mb-3 text-[22px] text-gray-500 md:text-3xl text-center">Welcome To <a class="text-blue-400">SNG Solutions Pvt Ltd</a></p>
+  <div class="sm:mx-auto md:mx-auto border-blue-400 sm:border-b-4 w-12"></div>
+  <p class="text-gray-500 text-md md:text-lg mt-4 md:mt-6 md:mx-28">At SNG Solutions Pvt Ltd, we are committed to excellence in educational consultancy, research, and innovative solutions. Our dedicated team of experts is here to guide you through the intricate world of academia and beyond. Explore our diverse range of services designed to empower individuals, institutions, and businesses alike.</p>
 </div>
+
+
+<!-- description  -->
+<section class="text-gray-600 body-font overflow-hidden">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="lg:w-4/5 mx-auto flex flex-wrap">
+      <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+        <h2 class="text-sm title-font text-gray-500 tracking-widest">SNG Solutions Pvt Ltd</h2>
+        <h1 class="text-gray-900 text-3xl title-font font-medium mb-4">Dream. Learn. Achieve.</h1>
+        <div class="flex mb-4">
+          <a id="description-tab" href="#description" class="tab-link flex-grow text-indigo-500 border-b-2 border-indigo-500 py-2 text-lg px-1">Description</a>
+          <a id="reviews-tab" href="#reviews" class="tab-link flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">Reviews</a>
+          <a id="details-tab" href="#details" class="tab-link flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">Details</a>
+        </div>
+        <!-- description section  -->
+        <div id="description" class="tab-content leading-relaxed mb-4">
+          <p>Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam inxigo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean.</p>
+        </div>
+        <!-- review section  -->
+        <div id="reviews" class="tab-content leading-relaxed mb-4 hidden">
+          <p>Review content goes here. You can include customer reviews, ratings, and feedback.</p>
+        </div>
+        <!-- details section  -->
+        <div id="details" class="tab-content leading-relaxed mb-4 hidden">
+          <p>Details content goes here. Provide additional information about the product, specifications, etc.</p>
+        </div>
+      </div>
+      <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://plus.unsplash.com/premium_photo-1682125773446-259ce64f9dd7?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.tab-link');
+    const contents = document.querySelectorAll('.tab-content');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        // Remove active class from all tabs
+        tabs.forEach(item => item.classList.remove('text-indigo-500', 'border-indigo-500'));
+        tabs.forEach(item => item.classList.add('border-gray-300'));
+        
+        // Add active class to the clicked tab
+        tab.classList.add('text-indigo-500', 'border-indigo-500');
+        
+        // Hide all content
+        contents.forEach(content => content.classList.add('hidden'));
+        
+        // Show the corresponding content
+        const target = document.querySelector(tab.getAttribute('href'));
+        target.classList.remove('hidden');
+      });
+    });
+  });
+</script>
+
+
+<section class="py-12 md:py-24">
+  <div class="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 relative">
+      <div class="shadow rounded-xl">
+          <div class="grid overflow-hidden text-white shadow-xl md:grid-cols-2 bg-blue-500 rounded-xl">
+              <aside class="p-8 space-y-4 md:p-16">
+                  <h2 class="text-2xl font-bold tracking-tight md:text-4xl font-headline">
+                      Ready to dive in?
+                      Get your free consultation now.
+                  </h2>
+
+                  <p class="font-medium text-blue-100 md:text-2xl">
+                    "Inspiring minds, shaping careers for brighter futures.
+                  </p>
+
+              </aside>
+
+              <aside class="relative hidden md:block">
+                  <img class="absolute inset-0 object-cover object-left-top w-full h-full mt-16 -mr-16 rounded-tl-lg" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Discover our beautiful panel">
+              </aside>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- our services  -->
+<section class="text-gray-600 body-font mt-8">
+  <p class="mb-3 text-[22px] text-gray-500 md:text-3xl text-center">Our <a class="text-blue-400">Services</a></p>
+  <div class="sm:mx-auto md:mx-auto border-blue-400 sm:border-b-4 w-12"></div>
+  <div class="container px-5 lg:px-36 py-14 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">SERVICE1</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">HEADING</h1>
+            <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Autem aperiam nulla</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">SERVICE2</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">HEADING</h1>
+            <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Autem aperiam nulla</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">SERVICE3</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">HEADING</h1>
+            <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Autem aperiam nulla</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
     <!-- footer section starts here -->

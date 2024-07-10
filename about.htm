@@ -74,7 +74,7 @@
             <a href="index.htm" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700">Home</a>
           </li>
           <li>
-            <a href="About.htm" class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700" aria-current="page">About</a>
+            <a href="About.htm" class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-600" aria-current="page">About</a>
           </li>
         <li>
           <a href="events.htm" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700">Events</a>
@@ -201,10 +201,10 @@
   <div class="bg-gray-100 py-10">
       <div class="max-w-screen-lg mx-auto">
           <div class="text-left mb-16">
-              <p class="mt-4 text-sm leading-7 text-gray-500 font-regular text-center">
-                  THE TEAM
-              </p>
-              <p class="mb-3 text-3xl text-gray-500 md:text-4xl text-center">Our <a class="text-blue-400">Team</a></p>
+              <!-- <p class="mt-4 text-sm leading-7 text-gray-500 font-regular text-center">
+                  THE MEMBER
+              </p> -->
+              <p class="mb-3 text-3xl text-gray-500 md:text-4xl text-center">Our <a class="text-blue-400">Members</a></p>
               <div class="sm:mx-auto md:mx-auto border-blue-400 sm:border-b-4 w-12 mb-12"></div>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -252,7 +252,7 @@
         <!-- <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css"> -->
         <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
         
-        <footer class="relative bg-gray-200 pt-8 pb-6 mt-14">
+        <footer class="relative bg-gray-200 pt-8 pb-6">
           <div class="container mx-auto px-4">
             <div class="flex flex-wrap text-left lg:text-left">
               <div class="w-full lg:w-6/12 px-4">
@@ -260,14 +260,14 @@
                 <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
                   we are committed to excellence in educational consultancy, research, and innovative solutions.
                 </h5>
-                <div class="mt-6 lg:mb-0 mb-6">
+                <!-- <div class="mt-6 lg:mb-0 mb-6">
                   <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                     <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                     <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                     <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                     <i class="fab fa-github"></i>
                   </button>
-                </div>
+                </div> -->
               </div>
               <div class="w-full lg:w-6/12 px-4">
                 <div class="flex flex-wrap items-top mb-6">
@@ -309,15 +309,26 @@
               </div>
             </div>
             <hr class="my-6 border-blueGray-300">
-            <div class="flex flex-wrap items-center md:justify-between justify-center">
-              <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-                <div class="text-sm text-blueGray-500 font-semibold py-1">
-                  Copyright © 2024 <a href="https://www.sngsolution.com" class="text-blueGray-500 hover:text-blue-500" target="_blank"> SNGSolution.com
-                </div>
+          </div>
+        </footer>    
+
+        <div class="bg-[#0395DA] py-4 text-gray-100">
+          <div class="container mx-auto px-4">
+            <div class="-mx-4 flex flex-wrap justify-between">
+              <div class="px-4 w-full text-center sm:w-auto sm:text-left">
+                Copyright © 
+                <script>new Date().getFullYear() > 2020 && document.write(" " + new Date().getFullYear())</script>
+                <a href="sngsolution.com" class="hover:text-blue-600">SNG Solution Pvt. Ltd</a>. All Rights Reserved.
+              </div>
+              <div class="flex space-x-4 px-4 w-full text-center sm:w-auto sm:text-left md:mr-16 justify-center">
+                <div><a href="#"><img width="30" height="30" src="https://img.icons8.com/material-outlined/ffffff/twitterx--v2.png" alt="twitterx--v2"/></a></div>  
+                <div><a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png" alt="facebook-new"/></a></div>
+                <div><a href="#"><img width="30" height="30" src="https://img.icons8.com/ios/50/ffffff/instagram-new--v1.png" alt="instagram-new--v1"/></a></div>
+
               </div>
             </div>
           </div>
-        </footer>    
+        </div>
 
   <!-- Footer -->
 </section>

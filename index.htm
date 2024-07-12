@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta tag  -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SNG Solutions Pvt Ltd are committed to excellence in educational consultancy, research, and innovative solutions.">
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNG Solution Pvt. Ltd</title>
+
+    <!-- Open Graph  -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SNG Solution Pvt. Ltd.">
+    <meta property="og:url" content="sngsolution.com.np">
+    <meta property="og:image" content="images/favicon/sng-logo.png">
+    <meta property="og:description" content="SNG Solutions Pvt Ltd are committed to excellence in educational consultancy, research, and innovative solutions.">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/sng-logo.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/sng-logo.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/sng-logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/sng-logo.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/sng-logo.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/sng-logo.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/sng-logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/sng-logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/sng-logo.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/sng-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/sng-logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/sng-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/sng-logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -60,12 +93,12 @@
 <nav class="border-gray-200 bg-gray-50 py-2.5 top-0 z-50">
   <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
     <a href="index.htm" class="flex items-center space-x-3 rtl:space-x-reverse px-auto">
-      <img src="images/navbar/sng-logo.png" class="h-[100px]" alt="Flowbite Logo" />
+      <img src="images/navbar/sng-logo.png" class="h-[100px] md:ml-9" alt="Flowbite Logo" />
   </a>
     <div class="flex items-center lg:order-2 mobile-menu">
  
      <a href="book.htm"
-        class="text-white bg-[#0395DA] hover:bg-blue-600 focus:ring-4 focus:ring-green-700 font-medium rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none">Book a Meeting</a>
+        class="text-white bg-[#0395DA] hover:bg-blue-600 focus:ring-4 focus:ring-blue-600 font-medium rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none">Book a Meeting</a>
 
 
       <button data-collapse-toggle="mobile-menu-2" type="button"
@@ -108,16 +141,6 @@
     </div>
   </div>
 </nav>
-
-<style>
-  @media (max-width:505px){
-    .mobile-menu{
-    width: 100%;
-    justify-content: space-between;
-    }
-}
-</style>
-
   
   <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
     <!--slider-->
@@ -126,10 +149,10 @@
 
   <!-- Hero start -->
 <section>
-<div class="relative isolate flex flex-col justify-center items-start overflow-hidden px-8 pb-8 pt-96 max-w-full mx-auto full-screen h-[650px]">
+<div class="relative isolate flex flex-col justify-center items-start overflow-hidden px-8 pb-8 pt-96 max-w-full mx-auto full-screen md:h-[650px] sm:h-[150px]">
   <img src="images/hero/hero.jpg" alt="hero" class="absolute inset-0 h-full w-full object-cover">
   <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-  <div class="z-10 text-left ml-14 mb-96">
+  <div class="z-10 text-left ml-14 md:mb-96">
     <h1 class="mt-3 text-[30px] md:text-[50px] font-bold text-white text-white">Welcome to</h1>
     <div class=" mb-14 text-[14px] md:text-[22px] leading-6 text-white">SNG Solutions Pvt Ltd</div>
   </div>
@@ -180,7 +203,7 @@
 
 
 <!-- description  -->
-<section class="text-gray-600 body-font overflow-hidden">
+<section class="text-gray-600 body-font overflow-hidden" id="scroll-section">
   <div class="container px-5 py-24 md:mx-16">
     <div class="lg:w-full mx-auto flex flex-wrap">
       <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
@@ -204,37 +227,10 @@
           <p>Details content goes here. Provide additional information about the product, specifications, etc.</p>
         </div>
       </div>
-      <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://plus.unsplash.com/premium_photo-1682125773446-259ce64f9dd7?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <img id="main-image" alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded slide-in-right" src="https://plus.unsplash.com/premium_photo-1682125773446-259ce64f9dd7?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
     </div>
   </div>
 </section>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const tabs = document.querySelectorAll('.tab-link');
-    const contents = document.querySelectorAll('.tab-content');
-    
-    tabs.forEach(tab => {
-      tab.addEventListener('click', function(event) {
-        event.preventDefault();
-        
-        // Remove active class from all tabs
-        tabs.forEach(item => item.classList.remove('text-indigo-500', 'border-indigo-500'));
-        tabs.forEach(item => item.classList.add('border-gray-300'));
-        
-        // Add active class to the clicked tab
-        tab.classList.add('text-indigo-500', 'border-indigo-500');
-        
-        // Hide all content
-        contents.forEach(content => content.classList.add('hidden'));
-        
-        // Show the corresponding content
-        const target = document.querySelector(tab.getAttribute('href'));
-        target.classList.remove('hidden');
-      });
-    });
-  });
-</script>
 
 
 <section class="py-12 md:py-16">
@@ -410,50 +406,49 @@
 </section> -->
 
 <!-- why choose SNG Solution  -->
- <section>
-<div class="max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6 md:mt-10">
-  <p class="mb-3  text-[27px] text-gray-600 md:text-4xl text-center">Why choose <a class="text-blue-600">SNG Solution</a></p>
-  <div class="sm:mx-auto md:mx-auto border-blue-400 sm:border-b-4 w-12 mb-12"></div>
+<section id="scroll-sec">
+  <div class="max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6 md:mt-10">
+    <p class="mb-3 text-[27px] text-gray-600 md:text-4xl text-center">Why choose <a class="text-blue-600">SNG Solution</a></p>
+    <div class="sm:mx-auto md:mx-auto border-blue-400 sm:border-b-4 w-12 mb-12"></div>
 
-  <div class="flex flex-col md:flex-row md:mx-16">
+    <div class="flex flex-col md:flex-row md:mx-16">
       <!-- image -->
       <div class="mr-0 md:mr-8 mb-6 md:mb-0">
-          <img class="w-1/2 md:w-full mx-auto" src="https://placeholder.pics/svg/400" alt="can_help_banner">
+        <img class="w-1/2 md:w-full mx-auto rounded-2xl fade-in" src="images/1.jpg" alt="why choose SNG">
       </div>
-      
 
       <div class="flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2">
-          <div class="w-full sm:w-1/2 mb-4 px-2 ">
-              <div class="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
-                  <h3 class="text-2xl font-bold text-md mb-6">Expertise:</h3>
-                  <p class="text-sm">Our team of experts brings a wealth of knowledge and experience to every endeavor, ensuring you receive the best-in-class solutions.</p>
-              </div>
+        <div class="w-full sm:w-1/2 mb-4 px-2">
+          <div class="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
+            <h3 class="text-2xl font-bold text-md mb-6">Expertise:</h3>
+            <p class="text-sm">Our team of experts brings a wealth of knowledge and experience to every endeavor, ensuring you receive the best-in-class solutions.</p>
           </div>
-          <div class="w-full sm:w-1/2 mb-4 px-2 ">
-              <div class="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
-                  <h3 class="text-2xl font-bold text-md mb-6">Customization:</h3>
-                  <p class="text-sm">We understand that each client is unique. That’s why our services are tailored to meet your specific needs and objectives.</p>
-              </div>
+        </div>
+        <div class="w-full sm:w-1/2 mb-4 px-2">
+          <div class="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
+            <h3 class="text-2xl font-bold text-md mb-6">Customization:</h3>
+            <p class="text-sm">We understand that each client is unique. That’s why our services are tailored to meet your specific needs and objectives.</p>
           </div>
+        </div>
 
-          <div class="w-full sm:w-1/2 mb-4 px-2 ">
-              <div class="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
-                  <h3 class="text-2xl font-bold text-md mb-6"> Innovation:</h3>
-                  <p class="text-sm">We embrace innovation and stay abreast of the latest trends to provide you with cutting-edge solutions that give you a competitive edge.</p>
-              </div>
+        <div class="w-full sm:w-1/2 mb-4 px-2">
+          <div class="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
+            <h3 class="text-2xl font-bold text-md mb-6">Innovation:</h3>
+            <p class="text-sm">We embrace innovation and stay abreast of the latest trends to provide you with cutting-edge solutions that give you a competitive edge.</p>
           </div>
+        </div>
 
-          <div class="w-full sm:w-1/2 mb-4 px-2 ">
-              <div class="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
-                  <h3 class="text-2xl font-bold text-md mb-6">Global Reach:</h3>
-                  <p class="text-sm">Our consultancy services span across borders, connecting you to educational opportunities and industry insights from around the world.</p>
-              </div>
+        <div class="w-full sm:w-1/2 mb-4 px-2">
+          <div class="h-full py-4 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
+            <h3 class="text-2xl font-bold text-md mb-6">Global Reach:</h3>
+            <p class="text-sm">Our consultancy services span across borders, connecting you to educational opportunities and industry insights from around the world.</p>
           </div>
-
+        </div>
       </div>
+    </div>
   </div>
-</div>
 </section>
+
 
 <!-- feature news -->
  <!-- <section class="mt-14">
@@ -669,6 +664,8 @@
   <!-- Footer -->
 </section>
 
+
+<script src="assets/js/script.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSGFpoO/ufreqqF6MVu4JdG7PhIxZlW8sSJv43gkdSHlua9DmM/" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-V7Eu9XfJ5J1/yJ31eMU1Dm+g/gzjt6M1yUYKc+eTaQKJdY+lz9CqLQ==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-p5I9iYqMbKJw5+vAuZ9T3dPSz wed8I8Lqko6dGn4/P8k9ctFsiv5gYusI4WU+k=" crossorigin="anonymous"></script> -->

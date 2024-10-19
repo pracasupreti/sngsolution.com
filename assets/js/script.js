@@ -87,15 +87,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   descriptionTab.addEventListener('click', function () {
-    showContent(descriptionTab, descriptionContent, 'https://plus.unsplash.com/premium_photo-1682125773446-259ce64f9dd7?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    showContent(descriptionTab, descriptionContent, 'images/home/dream.jpg');
   });
 
   reviewsTab.addEventListener('click', function () {
-    showContent(reviewsTab, reviewsContent, 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=1471&auto=format&fit=crop');
+    showContent(reviewsTab, reviewsContent, 'images/home/learn.jpg');
   });
 
   detailsTab.addEventListener('click', function () {
-    showContent(detailsTab, detailsContent, 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    showContent(detailsTab, detailsContent, 'images/home/achieve.jpg');
   });
 
   window.addEventListener('scroll', checkVisibility);

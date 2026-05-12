@@ -372,26 +372,6 @@
         },*/
 
         {
-          image: `images/team/upama pokharel.jpeg`,
-          imageClass: `object-cover`,
-          name: `Upama Pokharel`,
-          title: `Program Coordinator`,
-          description: `<p class="mb-4">Upama Pokharel serves as a Program Coordinator at SNG Solution, utilizing her background in computing and project management to enhance operational efficiency. With a BSc (Hons) in Computing, she brings technical expertise in software development and quality assurance to the team, ensuring high standards in program delivery.</p>
-<p class="mb-4">Her experience includes managing full design lifecycles and contributing to AI-driven data projects, which has strengthened her skills in collaborative workflows and documentation. Proficient in tools like JIRA and Trello, Upama’s multidisciplinary approach and focus on continuous improvement support SNG Solution’s mission to provide impactful corporate and consultancy services.</p>`,
-          social: `<a class="inline-block" href="#" target="_blank">
-<svg height="25" viewbox="0 0 24 24" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M10.053,7.988l5.631,8.024h-1.497L8.566,7.988H10.053z M21,21H3V3h18V21z M17.538,17l-4.186-5.99L16.774,7h-1.311l-2.704,3.16L10.552,7H6.702l3.941,5.633L6.906,17h1.333l3.001-3.516L13.698,17H17.538z">
-</path>
-</svg>
-</a>
-<a class="inline-block" href="#" target="_blank">
-<svg height="25" viewbox="0 0 30 30" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533c2.987,0,3.539,1.966,3.539,4.522V22z">
-</path>
-</svg>
-</a>`,
-        },
-        {
           image: `images/team/pramit.png`,
           imageClass: ``,
           name: `Pramit Giri`,
@@ -412,6 +392,27 @@
 </svg>
 </a>`,
         },
+        {
+          image: `images/team/sadeeksha.png`,
+          imageClass: ``,
+          name: `Sadeeksha`,
+          title: `Executive - Events`,
+          description: `<p class="mb-4">Sadeeksha is a dedicated member of the SNG Solution team, contributing to the successful planning and execution of various events and programs. Her commitment to excellence and teamwork helps in delivering high-quality consultancy services.</p>`,
+          social: ``,
+        },
+        {
+          image: `images/team/dipika.png`,
+          imageClass: ``,
+          name: `Dipika Khadka`,
+          title: `Executive - Admin`,
+          description: `<p class="mb-4">Dipika supports the administrative functions at SNG Solution, ensuring smooth office operations and efficient coordination within the team. Her proactive approach and attention to detail are vital to the organization's growth.</p>`,
+          social: `<a class="inline-block" href="https://www.linkedin.com/in/dipikakhadka/" target="_blank">
+<svg height="25" viewbox="0 0 30 30" width="25" xmlns="http://www.w3.org/2000/svg">
+<path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533c2.987,0,3.539,1.966,3.539,4.522V22z">
+</path>
+</svg>
+</a>`,
+        },
       ];
 
       function renderTeam() {
@@ -423,7 +424,7 @@
         <div class="flex flex-wrap items-center pt-5 pb-5">
           <div class="w-full md:w-1/4 text-center mb-6 md:mb-0">
             <img src="${member.image}"
-              class="mx-auto rounded-full mb-3 h-56 w-56 ${member.imageClass}" alt="${member.name}">
+              class="mx-auto rounded-full mb-3 h-56 w-56 object-cover ${member.imageClass}" alt="${member.name}">
           </div>
           <div class="w-full md:w-3/4">
             <h3 class="text-2xl font-semibold mb-2 text-center md:text-left">${member.name}</h3>

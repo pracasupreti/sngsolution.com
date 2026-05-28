@@ -1,0 +1,2137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SNG Solution | Agentic AI for Banking Transformation</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        font-family: "Helvetica", "Arial", sans-serif;
+        color: #1a2842;
+        -webkit-font-smoothing: antialiased;
+      }
+      .page {
+        width: 210mm;
+        height: 297mm;
+        page-break-after: always;
+        position: relative;
+        overflow: hidden;
+        background: #ffffff;
+      }
+      .page:last-child {
+        page-break-after: auto;
+      }
+
+      /* ============ PAGE 1 - COVER ============ */
+      .cover {
+        background:
+          linear-gradient(135deg, #ffffff 0%, #ffffff 48%, transparent 48%),
+          linear-gradient(160deg, #0a1f3d 0%, #0d3b6e 60%, #1e8bc3 100%);
+        padding: 14mm 14mm 0 14mm;
+      }
+      .cover::before {
+        content: "";
+        position: absolute;
+        top: -40mm;
+        right: -30mm;
+        width: 160mm;
+        height: 160mm;
+        background: radial-gradient(
+          circle,
+          rgba(30, 139, 195, 0.1) 0%,
+          rgba(30, 139, 195, 0) 70%
+        );
+        z-index: 0;
+      }
+      .cover-logo {
+        position: relative;
+        z-index: 2;
+      }
+      .cover-logo img {
+        height: 16mm;
+      }
+
+      .cover-workshop-tag {
+        display: inline-block;
+        background: #e63946;
+        color: white;
+        font-weight: 800;
+        font-size: 10pt;
+        padding: 2mm 5mm;
+        border-radius: 1.5mm;
+        margin-top: 8mm;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        box-shadow: 0 3mm 6mm rgba(230, 57, 70, 0.3);
+        position: relative;
+        z-index: 3;
+      }
+      .cover-workshop-script {
+        font-family: "Georgia", serif;
+        font-style: italic;
+        font-size: 26pt;
+        color: #1e8bc3;
+        font-weight: 400;
+        margin-top: 4mm;
+        line-height: 1;
+        position: relative;
+        z-index: 3;
+      }
+      .cover-workshop-script .small {
+        font-size: 16pt;
+        color: #0a1f3d;
+        font-style: normal;
+        font-weight: 300;
+      }
+      .cover-title-main {
+        font-size: 36pt;
+        font-weight: 900;
+        color: #0a1f3d;
+        line-height: 0.95;
+        margin-top: 3mm;
+        letter-spacing: -0.5px;
+        position: relative;
+        z-index: 3;
+      }
+      .cover-title-main .grad {
+        background: linear-gradient(90deg, #1e8bc3, #00bcd4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .cover-sub-title {
+        font-size: 13pt;
+        color: #1e8bc3;
+        font-weight: 700;
+        margin-top: 5mm;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 3;
+      }
+      .cover-tagline {
+        font-size: 10pt;
+        color: #4a5b73;
+        margin-top: 2.5mm;
+        font-style: italic;
+        max-width: 95mm;
+        line-height: 1.4;
+        position: relative;
+        z-index: 3;
+      }
+
+      /* Duration floating badge */
+      .cover-feature-tag {
+        position: absolute;
+        top: 60mm;
+        right: 18mm;
+        background: linear-gradient(135deg, #00bcd4, #1e8bc3);
+        color: white;
+        padding: 5mm 7mm;
+        border-radius: 2mm;
+        font-size: 9pt;
+        font-weight: 700;
+        z-index: 5;
+        transform: rotate(2deg);
+        box-shadow: 0 4mm 10mm rgba(30, 139, 195, 0.45);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        text-align: center;
+      }
+      .cover-feature-tag .num {
+        font-size: 28pt;
+        display: block;
+        line-height: 1;
+        font-weight: 900;
+      }
+
+      /* AI Neural network decoration - on dark area */
+      .ai-decoration {
+        position: absolute;
+        top: 50mm;
+        right: -8mm;
+        z-index: 2;
+        width: 95mm;
+        height: 95mm;
+        opacity: 0.55;
+      }
+
+      /* Bottom content area (on dark background) */
+      .cover-bottom-section {
+        position: absolute;
+        left: 14mm;
+        right: 14mm;
+        bottom: 16mm;
+        z-index: 4;
+        color: white;
+      }
+
+      .cover-meta {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 6mm;
+        margin-bottom: 8mm;
+      }
+      .meta-box {
+        display: flex;
+        align-items: center;
+        gap: 3mm;
+      }
+      .meta-icon {
+        width: 13mm;
+        height: 13mm;
+        border-radius: 2mm;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1.5px solid rgba(0, 188, 212, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .meta-icon svg {
+        width: 7mm;
+        height: 7mm;
+      }
+      .meta-text-label {
+        font-size: 7.5pt;
+        color: #00bcd4;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+      .meta-text-value {
+        font-size: 11pt;
+        color: white;
+        font-weight: 800;
+        line-height: 1.15;
+        margin-top: 0.5mm;
+      }
+      .meta-text-value .sub {
+        font-size: 8pt;
+        font-weight: 500;
+        opacity: 0.8;
+        display: block;
+      }
+
+      .facilitator-strip {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(0, 188, 212, 0.35);
+        padding: 4mm 6mm;
+        border-radius: 2mm;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .facilitator-strip .l1 {
+        font-size: 7.5pt;
+        color: #00bcd4;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+      .facilitator-strip .l2 {
+        font-size: 14pt;
+        font-weight: 800;
+        margin-top: 1mm;
+        color: white;
+      }
+      .facilitator-strip .l3 {
+        font-size: 8.5pt;
+        opacity: 0.85;
+        font-style: italic;
+        margin-top: 1mm;
+      }
+      .facilitator-strip .right-stamp {
+        background: linear-gradient(135deg, #f5a623, #e8910c);
+        color: #0a1f3d;
+        padding: 2mm 3.5mm;
+        border-radius: 1.5mm;
+        font-size: 8pt;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .cover-banner-bottom {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgba(10, 31, 61, 0.85);
+        color: white;
+        padding: 3.5mm 14mm;
+        z-index: 5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 8.5pt;
+        border-top: 1px solid rgba(0, 188, 212, 0.4);
+      }
+      .cover-banner-bottom .who {
+        font-weight: 800;
+        letter-spacing: 0.5px;
+      }
+      .cover-banner-bottom .who .pink {
+        color: #ff6b8a;
+      }
+      .cover-banner-bottom .for {
+        font-style: italic;
+        opacity: 0.85;
+      }
+
+      /* ============ COMMON PAGE STYLES ============ */
+      .content-page {
+        padding: 14mm 14mm 14mm 14mm;
+        background: #ffffff;
+      }
+      .content-page::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5mm;
+        background: linear-gradient(90deg, #1e8bc3, #00bcd4, #0d3b6e);
+      }
+      .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5mm;
+        padding-top: 3mm;
+      }
+      .page-header-logo {
+        display: flex;
+        align-items: center;
+        gap: 3mm;
+      }
+      .page-header-logo img {
+        height: 9mm;
+      }
+      .page-header-title {
+        font-size: 7.5pt;
+        color: #4a5b73;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        text-align: right;
+      }
+      .page-header-title b {
+        color: #1e8bc3;
+      }
+
+      .section-h {
+        font-size: 13pt;
+        font-weight: 900;
+        color: #0d3b6e;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin: 3mm 0 2.5mm 0;
+        padding-bottom: 1.2mm;
+        border-bottom: 2px solid #1e8bc3;
+        display: inline-block;
+      }
+      .section-p {
+        font-size: 9pt;
+        line-height: 1.5;
+        color: #2a3a52;
+        text-align: justify;
+        margin-bottom: 2mm;
+      }
+
+      ul.tick-list {
+        list-style: none;
+        margin-top: 1.5mm;
+      }
+      ul.tick-list li {
+        padding: 1mm 0 1mm 7mm;
+        position: relative;
+        font-size: 8.7pt;
+        line-height: 1.4;
+        color: #2a3a52;
+      }
+      ul.tick-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 1.8mm;
+        width: 4.5mm;
+        height: 4.5mm;
+        background: linear-gradient(135deg, #1e8bc3, #00bcd4);
+        border-radius: 50%;
+      }
+      ul.tick-list li::after {
+        content: "";
+        position: absolute;
+        left: 1.2mm;
+        top: 2.6mm;
+        width: 1.8mm;
+        height: 1.1mm;
+        border-left: 1.5px solid white;
+        border-bottom: 1.5px solid white;
+        transform: rotate(-45deg);
+      }
+
+      /* ============ PAGE 2 - INFO PAGE ============ */
+      .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 3mm;
+        margin: 2mm 0 4mm 0;
+      }
+      .stat-card {
+        background: linear-gradient(135deg, #f4f7fb, #e8f1f8);
+        border-left: 3px solid #1e8bc3;
+        padding: 2.5mm 3mm;
+        border-radius: 1.5mm;
+      }
+      .stat-card .v {
+        font-size: 16pt;
+        font-weight: 900;
+        color: #0d3b6e;
+        line-height: 1;
+      }
+      .stat-card .l {
+        font-size: 7pt;
+        color: #4a5b73;
+        margin-top: 1.5mm;
+        line-height: 1.25;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        font-weight: 600;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6mm;
+      }
+
+      .audience-box {
+        background: linear-gradient(135deg, #0d3b6e, #1e8bc3);
+        color: white;
+        padding: 3.5mm 4.5mm;
+        border-radius: 2mm;
+        margin-top: 2mm;
+      }
+      .audience-box .title {
+        font-size: 10pt;
+        font-weight: 800;
+        margin-bottom: 1.5mm;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .audience-box .body {
+        font-size: 8.5pt;
+        line-height: 1.45;
+      }
+      .audience-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5mm;
+        margin-top: 2mm;
+      }
+      .audience-pills span {
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        padding: 0.8mm 2.5mm;
+        border-radius: 5mm;
+        font-size: 7.5pt;
+      }
+
+      .invest-box {
+        background: linear-gradient(135deg, #fffaf0, #fdf2d9);
+        border: 1.5px solid #f5a623;
+        border-radius: 2mm;
+        padding: 3mm 4mm;
+        margin-top: 2.5mm;
+      }
+      .invest-box .ttl {
+        font-size: 9.5pt;
+        font-weight: 800;
+        color: #b8721c;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .invest-box .price {
+        font-size: 13pt;
+        font-weight: 900;
+        color: #0d3b6e;
+        margin-top: 1.5mm;
+      }
+      .invest-box .terms {
+        font-size: 7.8pt;
+        color: #4a5b73;
+        margin-top: 1.5mm;
+        line-height: 1.4;
+        text-align: justify;
+      }
+
+      /* ============ MODULES PAGES ============ */
+      .day-banner {
+        background: linear-gradient(90deg, #0d3b6e, #1e8bc3);
+        color: white;
+        padding: 4mm 5mm;
+        border-radius: 2mm;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2mm 0 4mm 0;
+      }
+      .day-banner .lhs {
+        display: flex;
+        align-items: center;
+        gap: 4mm;
+      }
+      .day-banner .badge {
+        background: white;
+        color: #0d3b6e;
+        width: 16mm;
+        height: 16mm;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        flex-shrink: 0;
+      }
+      .day-banner .badge .b1 {
+        font-size: 7pt;
+        line-height: 1;
+      }
+      .day-banner .badge .b2 {
+        font-size: 16pt;
+        line-height: 1;
+        margin-top: 1mm;
+      }
+      .day-banner .ttl {
+        font-size: 14pt;
+        font-weight: 900;
+        line-height: 1.1;
+      }
+      .day-banner .sub {
+        font-size: 8pt;
+        opacity: 0.9;
+        margin-top: 1mm;
+      }
+      .day-banner .icon-r svg {
+        width: 16mm;
+        height: 16mm;
+        opacity: 0.9;
+      }
+
+      .module-card {
+        background: #f4f7fb;
+        border-left: 4px solid #1e8bc3;
+        border-radius: 1.5mm;
+        padding: 3mm 4mm 3.5mm 4mm;
+        margin-bottom: 3mm;
+        position: relative;
+      }
+      .module-card .mod-tag {
+        position: absolute;
+        top: -2mm;
+        right: 4mm;
+        background: #e63946;
+        color: white;
+        padding: 0.8mm 3mm;
+        font-size: 7pt;
+        font-weight: 800;
+        border-radius: 1mm;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .module-card h3 {
+        font-size: 11pt;
+        color: #0d3b6e;
+        font-weight: 800;
+        margin-bottom: 1.5mm;
+        line-height: 1.2;
+      }
+      .module-card h3 .num {
+        display: inline-block;
+        background: #1e8bc3;
+        color: white;
+        width: 7mm;
+        height: 7mm;
+        line-height: 7mm;
+        text-align: center;
+        border-radius: 1.5mm;
+        font-size: 9pt;
+        margin-right: 2mm;
+        vertical-align: middle;
+      }
+      .module-card p {
+        font-size: 8.5pt;
+        line-height: 1.45;
+        color: #2a3a52;
+        text-align: justify;
+      }
+      .module-card .tags {
+        margin-top: 2mm;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5mm;
+      }
+      .module-card .tags span {
+        background: white;
+        border: 1px solid #c5d4e3;
+        color: #1e8bc3;
+        padding: 0.6mm 2.5mm;
+        border-radius: 4mm;
+        font-size: 7pt;
+        font-weight: 600;
+      }
+
+      /* ============ SCHEDULE PAGE ============ */
+      .sched-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 2mm;
+        font-size: 8.5pt;
+      }
+      .sched-table thead th {
+        background: linear-gradient(90deg, #0d3b6e, #1e8bc3);
+        color: white;
+        padding: 2.5mm 3mm;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 8.5pt;
+        text-align: left;
+      }
+      .sched-table td {
+        border: 1px solid #d5e0ec;
+        padding: 1.8mm 3mm;
+        vertical-align: top;
+        line-height: 1.35;
+      }
+      .sched-table tr.break-row td {
+        background: #f4f7fb;
+        text-align: center;
+        font-weight: 700;
+        color: #1e8bc3;
+        font-style: italic;
+        font-size: 7.8pt;
+        padding: 1.5mm 3mm;
+      }
+      .sched-table tr.day-divider td {
+        background: linear-gradient(90deg, #0a1f3d, #0d3b6e);
+        color: white;
+        font-weight: 800;
+        text-align: center;
+        font-size: 9pt;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 2.5mm;
+      }
+      .sched-table .time-c {
+        width: 24mm;
+        font-weight: 700;
+        color: #0d3b6e;
+        font-size: 7.8pt;
+      }
+      .sched-table .mod-c {
+        width: 55mm;
+        font-weight: 700;
+        color: #1e8bc3;
+        font-size: 8pt;
+      }
+      .sched-table .det-c {
+        color: #2a3a52;
+        font-size: 7.8pt;
+      }
+
+      /* ============ FACILITATOR PAGE ============ */
+      .fac-hero {
+        display: grid;
+        grid-template-columns: 56mm 1fr;
+        gap: 7mm;
+        margin-top: 3mm;
+        align-items: start;
+      }
+      .fac-photo {
+        width: 56mm;
+        height: 72mm;
+        background: linear-gradient(135deg, #0d3b6e, #1e8bc3);
+        border-radius: 3mm;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 6mm 12mm rgba(13, 59, 110, 0.2);
+      }
+      .fac-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .docker-badge-top {
+        position: absolute;
+        top: 3mm;
+        right: 3mm;
+        background: #0d6cb0;
+        color: white;
+        padding: 1.2mm 3mm;
+        font-size: 7pt;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        border-radius: 1mm;
+        box-shadow: 0 1mm 3mm rgba(0, 0, 0, 0.25);
+        z-index: 2;
+      }
+      .fac-name-card {
+        position: absolute;
+        bottom: 3mm;
+        left: 3mm;
+        right: 3mm;
+        background: rgba(255, 255, 255, 0.96);
+        border: 1.5px solid #1e8bc3;
+        border-radius: 2mm;
+        padding: 1.8mm 3mm;
+        text-align: center;
+        box-shadow: 0 2mm 4mm rgba(0, 0, 0, 0.25);
+        z-index: 2;
+        backdrop-filter: blur(2px);
+      }
+      .fac-name-card .nm {
+        font-size: 10.5pt;
+        font-weight: 900;
+        color: #0d3b6e;
+      }
+      .fac-name-card .ti {
+        font-size: 6.8pt;
+        color: #1e8bc3;
+        font-style: italic;
+        margin-top: 0.5mm;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+      }
+
+      .fac-intro h2 {
+        font-size: 18pt;
+        color: #0d3b6e;
+        font-weight: 900;
+        line-height: 1;
+        margin-bottom: 1mm;
+      }
+      .fac-intro .role {
+        color: #1e8bc3;
+        font-size: 10pt;
+        font-weight: 700;
+        margin-bottom: 3mm;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .fac-intro p {
+        font-size: 9pt;
+        line-height: 1.5;
+        color: #2a3a52;
+        text-align: justify;
+        margin-bottom: 2mm;
+      }
+
+      .creds-strip {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3mm;
+        margin: 4mm 0 3mm 0;
+      }
+      .cred-card {
+        background: linear-gradient(135deg, #f4f7fb, #e8f1f8);
+        border-radius: 2mm;
+        padding: 3mm;
+        text-align: center;
+        border-top: 3px solid #1e8bc3;
+      }
+      .cred-card .icon {
+        font-size: 16pt;
+        color: #1e8bc3;
+      }
+      .cred-card .v {
+        font-size: 10pt;
+        font-weight: 800;
+        color: #0d3b6e;
+        margin-top: 1.5mm;
+        line-height: 1.2;
+      }
+      .cred-card .l {
+        font-size: 7.5pt;
+        color: #4a5b73;
+        margin-top: 1mm;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+      }
+
+      .speciality-box {
+        background: linear-gradient(135deg, #0a1f3d, #0d3b6e);
+        color: white;
+        padding: 4mm 5mm;
+        border-radius: 2mm;
+        margin-top: 3mm;
+      }
+      .speciality-box .ttl {
+        font-size: 10pt;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 2mm;
+        color: #00bcd4;
+      }
+      .speciality-box .body {
+        font-size: 9pt;
+        line-height: 1.5;
+        text-align: justify;
+      }
+
+      /* ============ ABOUT PAGE ============ */
+      .about-hero {
+        background: linear-gradient(135deg, #f4f7fb, #e8f1f8);
+        border-radius: 3mm;
+        padding: 5mm;
+        margin-top: 3mm;
+        text-align: center;
+      }
+      .about-hero img {
+        height: 15mm;
+        margin-bottom: 2.5mm;
+      }
+      .about-hero h2 {
+        font-size: 18pt;
+        color: #0d3b6e;
+        font-weight: 900;
+        margin-bottom: 1.5mm;
+      }
+      .about-hero .tag {
+        font-size: 10pt;
+        color: #1e8bc3;
+        font-style: italic;
+        font-weight: 600;
+      }
+
+      .why-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4mm;
+        margin-top: 4mm;
+      }
+      .why-card {
+        background: white;
+        border: 1px solid #d5e0ec;
+        border-radius: 2mm;
+        padding: 4mm;
+        border-left: 4px solid #1e8bc3;
+      }
+      .why-card .icn {
+        width: 10mm;
+        height: 10mm;
+        background: linear-gradient(135deg, #1e8bc3, #00bcd4);
+        border-radius: 2mm;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2mm;
+      }
+      .why-card .icn svg {
+        width: 6mm;
+        height: 6mm;
+      }
+      .why-card h4 {
+        font-size: 10.5pt;
+        font-weight: 800;
+        color: #0d3b6e;
+        margin-bottom: 1.5mm;
+      }
+      .why-card p {
+        font-size: 8.5pt;
+        line-height: 1.5;
+        color: #4a5b73;
+      }
+
+      .about-body {
+        background: linear-gradient(135deg, #0a1f3d, #0d3b6e);
+        color: white;
+        padding: 4.5mm 6mm;
+        border-radius: 2mm;
+        margin-top: 4mm;
+        font-size: 9pt;
+        line-height: 1.55;
+        font-style: italic;
+        text-align: justify;
+      }
+
+      .contact-strip {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 3mm;
+        margin-top: 4mm;
+      }
+      .contact-item {
+        text-align: center;
+        padding: 3mm 2mm;
+      }
+      .contact-item .icn {
+        width: 10mm;
+        height: 10mm;
+        border: 1.5px solid #1e8bc3;
+        border-radius: 50%;
+        margin: 0 auto 2mm auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .contact-item .icn svg {
+        width: 5mm;
+        height: 5mm;
+      }
+      .contact-item .l {
+        font-size: 8pt;
+        font-weight: 700;
+        color: #0d3b6e;
+      }
+      .contact-item .v {
+        font-size: 7.5pt;
+        color: #4a5b73;
+        margin-top: 1mm;
+        line-height: 1.3;
+      }
+
+      .footer-cta {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(90deg, #1e8bc3, #0d3b6e);
+        color: white;
+        padding: 3mm 14mm;
+        text-align: center;
+        font-size: 8.5pt;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============================ -->
+    <!-- PAGE 1: COVER -->
+    <!-- ============================ -->
+    <div class="page cover">
+      <div class="cover-logo">
+        <img src="./images/navbar/sng-logo.png" alt="SNG Solution" />
+      </div>
+
+      <div class="cover-workshop-tag">In-House Executive Workshop</div>
+
+      <div class="cover-workshop-script">
+        Workshop <span class="small">on</span>
+      </div>
+
+      <div class="cover-title-main">
+        <span class="grad">AGENTIC AI</span><br />
+        FOR BANKING<br />
+        TRANSFORMATION
+      </div>
+
+      <div class="cover-sub-title">Reimagine. Automate. Lead.</div>
+      <div class="cover-tagline">
+        A 2-Day executive capacity building program designed exclusively for NIC
+        ASIA Bank, bridging the leadership gap between traditional banking and
+        intelligent agentic systems.
+      </div>
+
+      <!-- Floating duration badge -->
+      <div class="cover-feature-tag">
+        <span class="num">2</span>
+        Days<br />Workshop
+      </div>
+
+      <!-- AI Neural Network Decoration -->
+      <svg
+        class="ai-decoration"
+        viewBox="0 0 200 200"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <radialGradient id="nodeGrad" cx="50%" cy="50%">
+            <stop offset="0%" stop-color="#00bcd4" stop-opacity="0.95" />
+            <stop offset="100%" stop-color="#1e8bc3" stop-opacity="0.4" />
+          </radialGradient>
+          <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00bcd4" stop-opacity="0.7" />
+            <stop offset="100%" stop-color="#1e8bc3" stop-opacity="0.25" />
+          </linearGradient>
+        </defs>
+        <line
+          x1="30"
+          y1="40"
+          x2="100"
+          y2="60"
+          stroke="url(#lineGrad)"
+          stroke-width="0.8"
+        />
+        <line
+          x1="30"
+          y1="40"
+          x2="100"
+          y2="100"
+          stroke="url(#lineGrad)"
+          stroke-width="0.8"
+        />
+        <line
+          x1="30"
+          y1="100"
+          x2="100"
+          y2="60"
+          stroke="url(#lineGrad)"
+          stroke-width="0.8"
+        />
+        <line
+          x1="30"
+          y1="100"
+          x2="100"
+          y2="100"
+          stroke="url(#lineGrad)"
+          stroke-width="0.8"
+        />
+        <line
+          x1="30"
+          y1="100"
+          x2="100"
+          y2="140"
+          stroke="url(#lineGrad)"
+          stroke-width="0.8"
+        />
+        <line
+          x1="30"
+          y1="160"
+          x2="100"
+          y2="100"
+          stroke="url(#lineGrad)"
+          stroke-width="0.8"
+        />
+        <line
+          x1="30"
+          y1="160"
+          x2="100"
+          y2="140"
+          stroke="url(#lineGrad)"
+          stroke-width="0.8"
+        />
+        <line
+          x1="100"
+          y1="60"
+          x2="170"
+          y2="80"
+          stroke="url(#lineGrad)"
+          stroke-width="0.8"
+        />
+        <line
+          x1="100"
+          y1="100"
+          x2="170"
+          y2="80"
+          stroke="url(#lineGrad)"
+          stroke-width="0.8"
+        />
+        <line
+          x1="100"
+          y1="100"
+          x2="170"
+          y2="120"
+          stroke="url(#lineGrad)"
+          stroke-width="0.8"
+        />
+        <line
+          x1="100"
+          y1="140"
+          x2="170"
+          y2="120"
+          stroke="url(#lineGrad)"
+          stroke-width="0.8"
+        />
+        <circle cx="30" cy="40" r="4" fill="url(#nodeGrad)" />
+        <circle cx="30" cy="100" r="4" fill="url(#nodeGrad)" />
+        <circle cx="30" cy="160" r="4" fill="url(#nodeGrad)" />
+        <circle cx="100" cy="60" r="5" fill="#00bcd4" />
+        <circle cx="100" cy="100" r="6" fill="#00bcd4" />
+        <circle cx="100" cy="140" r="5" fill="#00bcd4" />
+        <circle cx="170" cy="80" r="4" fill="url(#nodeGrad)" />
+        <circle cx="170" cy="120" r="4" fill="url(#nodeGrad)" />
+        <circle
+          cx="100"
+          cy="100"
+          r="14"
+          fill="none"
+          stroke="#00bcd4"
+          stroke-width="0.8"
+          stroke-dasharray="2,2"
+          opacity="0.6"
+        />
+        <text
+          x="100"
+          y="106"
+          text-anchor="middle"
+          fill="#00bcd4"
+          font-size="11"
+          font-weight="bold"
+          font-family="Arial"
+        >
+          AI
+        </text>
+      </svg>
+
+      <!-- Bottom section on dark area -->
+      <div class="cover-bottom-section">
+        <div class="cover-meta">
+          <div class="meta-box">
+            <div class="meta-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#00bcd4"
+                stroke-width="2"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+            </div>
+            <div>
+              <div class="meta-text-label">Date</div>
+              <div class="meta-text-value">
+                TBC<span class="sub">2-Day Program</span>
+              </div>
+            </div>
+          </div>
+          <div class="meta-box">
+            <div class="meta-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#00bcd4"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div>
+              <div class="meta-text-label">Time</div>
+              <div class="meta-text-value">
+                9:30 AM &ndash; 5:00 PM<span class="sub">Daily</span>
+              </div>
+            </div>
+          </div>
+          <div class="meta-box">
+            <div class="meta-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#00bcd4"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div>
+              <div class="meta-text-label">Venue</div>
+              <div class="meta-text-value">
+                Kathmandu<span class="sub">Venue: TBC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="facilitator-strip">
+          <div>
+            <div class="l1">Facilitator &amp; Trainer</div>
+            <div class="l2">Er. Saroj Dahal</div>
+            <div class="l3">
+              Docker Captain &nbsp;&bull;&nbsp; Founder, 28Softwares
+              &nbsp;&bull;&nbsp; AI &amp; Cloud Architect
+            </div>
+          </div>
+          <div class="right-stamp">Hands-On<br />Demos</div>
+        </div>
+      </div>
+
+      <div class="cover-banner-bottom">
+        <div class="who">
+          <span class="pink">EXCLUSIVELY</span> FOR NIC ASIA BANK
+        </div>
+        <div class="for">
+          For Future-Ready Banking Leaders &amp; Decision Makers
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================ -->
+    <!-- PAGE 2: BACKGROUND, OBJECTIVES, TAKEAWAYS, VALUE, AUDIENCE, INVESTMENT -->
+    <!-- ============================ -->
+    <div class="page content-page">
+      <div class="page-header">
+        <div class="page-header-logo">
+          <img src="sng_logo_clear.png" alt="SNG" />
+        </div>
+        <div class="page-header-title">
+          Workshop on <b>Agentic AI for Banking Transformation</b>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="v">$1.3T</div>
+          <div class="l">Global AI banking value by 2030</div>
+        </div>
+        <div class="stat-card">
+          <div class="v">70%</div>
+          <div class="l">Banks deploying AI agents by 2027</div>
+        </div>
+        <div class="stat-card">
+          <div class="v">40%</div>
+          <div class="l">Operational cost cut via agentic workflows</div>
+        </div>
+        <div class="stat-card">
+          <div class="v">3x</div>
+          <div class="l">Faster customer resolution with AI agents</div>
+        </div>
+      </div>
+
+      <div class="section-h">Background</div>
+      <p class="section-p">
+        The global banking industry is undergoing a foundational shift driven by
+        Artificial Intelligence and intelligent automation. Agentic AI now marks
+        the next leap, where autonomous systems understand goals, coordinate
+        workflows, retrieve information, and execute decisions with minimal
+        human intervention. For Nepali banks, this is no longer a distant trend,
+        it is a near-term competitive imperative. NIC ASIA Bank, as one of the
+        country's largest commercial banks, stands at the inflection point where
+        early adoption of agentic systems can deliver measurable advantages in
+        cost efficiency, customer experience, compliance, and operational
+        resilience. This in-house workshop is purpose built to give executive
+        and senior management teams a strategic, practical, and demonstrably
+        real exposure to Agentic AI applied to banking workflows.
+      </p>
+
+      <div class="two-col">
+        <div>
+          <div class="section-h">Objectives</div>
+          <ul class="tick-list">
+            <li>
+              Introduce Agentic AI and its rapid evolution from rule based to
+              autonomous systems
+            </li>
+            <li>
+              Clearly differentiate General AI, Generative AI, and Agentic AI in
+              a banking context
+            </li>
+            <li>
+              Explore sector specific applications across service, credit,
+              compliance, and operations
+            </li>
+            <li>
+              Provide live exposure to intelligent workflow automation platforms
+            </li>
+            <li>
+              Demonstrate real, banking relevant AI use cases through hands-on
+              walkthroughs
+            </li>
+            <li>
+              Promote responsible, secure, and governance-aware AI adoption
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="section-h">Key Takeaways</div>
+          <ul class="tick-list">
+            <li>
+              Conceptual clarity on Agentic AI versus Generative and General AI
+            </li>
+            <li>
+              Practical exposure to n8n, Microsoft Copilot Studio, and AI agent
+              frameworks
+            </li>
+            <li>
+              Sector relevant use cases for customer support, loan processing,
+              KYC, and reporting
+            </li>
+            <li>
+              Templates and reference workflows that can be piloted internally
+            </li>
+            <li>Strategic readiness checklist for institutional AI adoption</li>
+            <li>
+              Certificate of participation jointly issued by SNG Solution and
+              the facilitator
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top: 3mm">
+        <div>
+          <div class="section-h">Value Added for NIC ASIA</div>
+          <ul class="tick-list">
+            <li>
+              Immediate productivity gains in repetitive operational workflows
+            </li>
+            <li>
+              Reduced manual workload across mid-office and back-office
+              functions
+            </li>
+            <li>Executive readiness to evaluate AI vendor proposals</li>
+            <li>
+              Foundation for an internal Agentic AI playbook and pilot roadmap
+            </li>
+          </ul>
+
+          <div class="invest-box">
+            <div class="ttl">Investment</div>
+            <div class="price">Modality Based, To Be Finalised</div>
+            <div class="terms">
+              Pricing is structured around the chosen engagement modality,
+              either a fully managed package by SNG covering venue, logistics,
+              and catering, or a co-hosted arrangement where NIC ASIA hosts the
+              venue while SNG delivers facilitation. Finalised during joint
+              scoping.
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="section-h">Target Audience</div>
+          <div class="audience-box">
+            <div class="title">Senior Executive &amp; Specialist Functions</div>
+            <div class="body">
+              Curated for senior leadership, departmental heads, and specialist
+              functions at NIC ASIA Bank who will shape, sponsor, or
+              operationalise AI adoption across the institution.
+            </div>
+            <div class="audience-pills">
+              <span>CEO / DCEO Office</span>
+              <span>Chief Risk Officer</span>
+              <span>Heads of Department</span>
+              <span>Innovation &amp; Digital</span>
+              <span>IT Leadership</span>
+              <span>Operations Heads</span>
+              <span>Credit &amp; Trade</span>
+              <span>Compliance / AML</span>
+              <span>Customer Experience</span>
+              <span>HR / L&amp;D Leads</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================ -->
+    <!-- PAGE 3: DAY 1 MODULES -->
+    <!-- ============================ -->
+    <div class="page content-page">
+      <div class="page-header">
+        <div class="page-header-logo">
+          <img src="./images/navbar/sng-logo.png" alt="SNG" />
+        </div>
+        <div class="page-header-title">
+          Workshop on <b>Agentic AI for Banking Transformation</b>
+        </div>
+      </div>
+
+      <div class="day-banner">
+        <div class="lhs">
+          <div class="badge">
+            <div class="b1">DAY</div>
+            <div class="b2">01</div>
+          </div>
+          <div>
+            <div class="ttl">
+              Understanding Agentic AI &amp; Banking Applications
+            </div>
+            <div class="sub">
+              Concept &nbsp;&bull;&nbsp; Differentiation &nbsp;&bull;&nbsp;
+              Frameworks &nbsp;&bull;&nbsp; Sector Applications
+              &nbsp;&bull;&nbsp; Executive Strategy
+            </div>
+          </div>
+        </div>
+        <div class="icon-r">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="32"
+              cy="32"
+              r="28"
+              fill="none"
+              stroke="white"
+              stroke-width="1.5"
+              opacity="0.4"
+            />
+            <circle
+              cx="32"
+              cy="32"
+              r="20"
+              fill="none"
+              stroke="white"
+              stroke-width="1.5"
+              opacity="0.6"
+            />
+            <path
+              d="M22 32 Q32 18 42 32 Q32 46 22 32 Z"
+              fill="white"
+              opacity="0.85"
+            />
+            <circle cx="32" cy="32" r="3" fill="#0d3b6e" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <div class="mod-tag">Session 1</div>
+        <h3><span class="num">1</span>Introduction to the AI Evolution</h3>
+        <p>
+          A structured walkthrough of how artificial intelligence has matured
+          from rule based and statistical systems to deep learning, then to
+          Generative AI, and now to Agentic AI. Participants gain a clear mental
+          model of where each generation of AI fits in banking, what each can
+          and cannot do, and why this distinction matters for strategy, vendor
+          evaluation, and risk governance.
+        </p>
+        <div class="tags">
+          <span>History of AI</span><span>Generative AI</span
+          ><span>Agentic AI</span><span>Banking lens</span>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <div class="mod-tag">Session 2</div>
+        <h3><span class="num">2</span>General AI vs Agentic AI</h3>
+        <p>
+          A focused comparison of conventional general-purpose AI assistants and
+          goal-driven agentic systems. The session unpacks how agentic AI plans,
+          decides, calls tools, and chains tasks autonomously, and explores
+          where this autonomy creates value in banking versus where
+          human-in-the-loop must remain.
+        </p>
+        <div class="tags">
+          <span>Tool use</span><span>Planning</span><span>Autonomy</span
+          ><span>Human-in-loop</span>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <div class="mod-tag">Session 3</div>
+        <h3><span class="num">3</span>Fundamentals of Agentic AI</h3>
+        <p>
+          The technical and operational anatomy of an AI agent, including
+          reasoning loops, memory, tool integration, retrieval augmented
+          generation, and multi-agent coordination. Concepts are explained in
+          plain language with banking-relevant analogies so that non-technical
+          executives can confidently participate in strategy and architecture
+          conversations.
+        </p>
+        <div class="tags">
+          <span>Agents</span><span>Memory</span><span>RAG</span
+          ><span>Orchestration</span>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <div class="mod-tag">Session 4</div>
+        <h3><span class="num">4</span>Applications in Banking</h3>
+        <p>
+          A deep dive into where agentic AI is already creating measurable value
+          in banks globally, including intelligent customer service, KYC and
+          onboarding, AML monitoring, loan documentation review, branch
+          operations, internal knowledge assistants, and finance reporting. Each
+          application is mapped to typical NIC ASIA workflow categories.
+        </p>
+        <div class="tags">
+          <span>Customer service</span><span>KYC &amp; AML</span
+          ><span>Credit ops</span><span>Reporting</span>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <div class="mod-tag">Session 5</div>
+        <h3>
+          <span class="num">5</span>Executive Discussion &amp; Institutional
+          Readiness
+        </h3>
+        <p>
+          A facilitated executive dialogue on opportunities, constraints,
+          regulatory considerations, vendor and build-versus-buy choices, and
+          what institutional readiness looks like. The output is a shared
+          understanding of where NIC ASIA could pilot first and what governance
+          scaffolding should be in place before scaling.
+        </p>
+        <div class="tags">
+          <span>Strategy</span><span>Governance</span><span>Pilot design</span
+          ><span>Roadmap</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================ -->
+    <!-- PAGE 4: DAY 2 MODULES -->
+    <!-- ============================ -->
+    <div class="page content-page">
+      <div class="page-header">
+        <div class="page-header-logo">
+          <img src="sng_logo_clear.png" alt="SNG" />
+        </div>
+        <div class="page-header-title">
+          Workshop on <b>Agentic AI for Banking Transformation</b>
+        </div>
+      </div>
+
+      <div class="day-banner">
+        <div class="lhs">
+          <div class="badge">
+            <div class="b1">DAY</div>
+            <div class="b2">02</div>
+          </div>
+          <div>
+            <div class="ttl">
+              Practical Demonstrations &amp; Hands-On Exposure
+            </div>
+            <div class="sub">
+              Live Workflows &nbsp;&bull;&nbsp; n8n &nbsp;&bull;&nbsp; Copilot
+              Studio &nbsp;&bull;&nbsp; Credit &amp; Risk &nbsp;&bull;&nbsp;
+              Communication Automation
+            </div>
+          </div>
+        </div>
+        <div class="icon-r">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <rect
+              x="8"
+              y="14"
+              width="48"
+              height="36"
+              rx="3"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+            />
+            <rect
+              x="14"
+              y="20"
+              width="10"
+              height="6"
+              rx="1"
+              fill="white"
+              opacity="0.85"
+            />
+            <rect
+              x="26"
+              y="20"
+              width="10"
+              height="6"
+              rx="1"
+              fill="white"
+              opacity="0.6"
+            />
+            <rect
+              x="38"
+              y="20"
+              width="12"
+              height="6"
+              rx="1"
+              fill="white"
+              opacity="0.85"
+            />
+            <rect
+              x="14"
+              y="30"
+              width="36"
+              height="3"
+              rx="1"
+              fill="white"
+              opacity="0.5"
+            />
+            <rect
+              x="14"
+              y="36"
+              width="22"
+              height="3"
+              rx="1"
+              fill="white"
+              opacity="0.5"
+            />
+            <rect
+              x="14"
+              y="42"
+              width="28"
+              height="3"
+              rx="1"
+              fill="white"
+              opacity="0.5"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <div class="mod-tag">Demo 1</div>
+        <h3><span class="num">1</span>AI Workflow Automation using n8n</h3>
+        <p>
+          A live build-along of agentic workflows in n8n, an open source
+          automation platform widely adopted by financial institutions for
+          orchestrating intelligent processes. Participants observe how approval
+          routing, automated MIS reporting, email triage, and operational
+          coordination tasks can be designed, deployed, and monitored without
+          heavy custom engineering.
+        </p>
+        <div class="tags">
+          <span>Approvals</span><span>MIS</span><span>Email triage</span
+          ><span>Operations</span>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <div class="mod-tag">Demo 2</div>
+        <h3>
+          <span class="num">2</span>Microsoft Copilot Studio for Internal
+          Banking Assistants
+        </h3>
+        <p>
+          A practical demonstration of building a custom enterprise AI assistant
+          on Microsoft Copilot Studio, tuned to internal banking policies,
+          product manuals, and operational SOPs. Participants see how such an
+          assistant can serve as a first line of support for branch staff,
+          reducing reliance on phone escalations and accelerating internal
+          knowledge retrieval.
+        </p>
+        <div class="tags">
+          <span>Copilot Studio</span><span>Internal AI</span
+          ><span>Branch enablement</span><span>SOP automation</span>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <div class="mod-tag">Demo 3</div>
+        <h3>
+          <span class="num">3</span>Loan &amp; Risk Analysis with AI Agents
+        </h3>
+        <p>
+          A walkthrough of how an AI agent can read loan files, extract key
+          data, cross-check against credit policy, flag inconsistencies, and
+          prepare a structured pre-credit memo for human credit officers. The
+          session also explores how similar agents support risk assessment,
+          early warning signals, and portfolio monitoring while keeping human
+          judgement firmly in control.
+        </p>
+        <div class="tags">
+          <span>Loan files</span><span>Credit memo</span
+          ><span>Risk monitoring</span><span>Early warnings</span>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <div class="mod-tag">Demo 4</div>
+        <h3>
+          <span class="num">4</span>Social Media &amp; Communication Automation
+        </h3>
+        <p>
+          A demonstration of how marketing and communication teams can use AI
+          agents to plan campaigns, draft compliant social posts, route customer
+          queries from public channels, and produce performance reports. The
+          session emphasises brand safety, regulatory disclosure norms, and
+          reputational risk management in a regulated financial institution.
+        </p>
+        <div class="tags">
+          <span>Campaigns</span><span>Brand safety</span
+          ><span>Customer voice</span><span>Reporting</span>
+        </div>
+      </div>
+
+      <div class="module-card">
+        <div class="mod-tag">Interactive</div>
+        <h3>
+          <span class="num">5</span>Interactive Q&amp;A and Bank-Specific Use
+          Case Mapping
+        </h3>
+        <p>
+          A facilitated working session where participants map their own
+          departmental pain points against the agentic AI patterns covered
+          during the workshop. The output is a shortlist of high-potential pilot
+          opportunities for NIC ASIA, with relative effort and value estimates,
+          ready for further internal scoping.
+        </p>
+        <div class="tags">
+          <span>Use case mapping</span><span>Pilot shortlist</span
+          ><span>Action planning</span><span>Q&amp;A</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================ -->
+    <!-- PAGE 5: SCHEDULE -->
+    <!-- ============================ -->
+    <div class="page content-page">
+      <div class="page-header">
+        <div class="page-header-logo">
+          <img src="sng_logo_clear.png" alt="SNG" />
+        </div>
+        <div class="page-header-title">
+          Workshop on <b>Agentic AI for Banking Transformation</b>
+        </div>
+      </div>
+
+      <div class="section-h">Program Schedule</div>
+      <p class="section-p" style="margin-bottom: 2mm">
+        A two-day immersive executive workshop combining conceptual sessions,
+        real-time demonstrations, and facilitated dialogue, with structured
+        breaks designed for executive engagement and peer interaction.
+      </p>
+
+      <table class="sched-table">
+        <thead>
+          <tr>
+            <th style="width: 24mm">Time</th>
+            <th style="width: 55mm">Modules</th>
+            <th>Direct Impact / Outcomes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="day-divider">
+            <td colspan="3">
+              Day 1 &nbsp;&bull;&nbsp; Understanding Agentic AI &amp; Banking
+              Applications
+            </td>
+          </tr>
+          <tr>
+            <td class="time-c">9:30 &ndash; 9:45 AM</td>
+            <td class="mod-c">Arrival &amp; Registration</td>
+            <td class="det-c">
+              Welcome tea / coffee, participant onboarding, course orientation.
+            </td>
+          </tr>
+          <tr>
+            <td class="time-c">9:45 &ndash; 11:00 AM</td>
+            <td class="mod-c">Session 1: Introduction to AI Evolution</td>
+            <td class="det-c">
+              Foundational clarity on how AI has evolved into agentic systems.
+            </td>
+          </tr>
+          <tr class="break-row">
+            <td colspan="3">
+              11:00 &ndash; 11:15 AM &nbsp;&bull;&nbsp; Networking Break
+            </td>
+          </tr>
+          <tr>
+            <td class="time-c">11:15 &ndash; 12:30 PM</td>
+            <td class="mod-c">
+              Sessions 2 &amp; 3: General vs Agentic AI + Fundamentals
+            </td>
+            <td class="det-c">
+              Sharper executive vocabulary on autonomy, planning, tool use, RAG,
+              and orchestration.
+            </td>
+          </tr>
+          <tr class="break-row">
+            <td colspan="3">
+              12:30 &ndash; 1:30 PM &nbsp;&bull;&nbsp; Lunch Break
+            </td>
+          </tr>
+          <tr>
+            <td class="time-c">1:30 &ndash; 3:00 PM</td>
+            <td class="mod-c">Session 4: Applications in Banking</td>
+            <td class="det-c">
+              Mapping global banking AI use cases against NIC ASIA's operational
+              footprint.
+            </td>
+          </tr>
+          <tr class="break-row">
+            <td colspan="3">
+              3:00 &ndash; 3:15 PM &nbsp;&bull;&nbsp; Networking Break
+            </td>
+          </tr>
+          <tr>
+            <td class="time-c">3:15 &ndash; 4:45 PM</td>
+            <td class="mod-c">
+              Session 5: Executive Discussion &amp; Readiness
+            </td>
+            <td class="det-c">
+              Shared view on pilot priorities, governance, and institutional
+              readiness.
+            </td>
+          </tr>
+          <tr>
+            <td class="time-c">4:45 &ndash; 5:00 PM</td>
+            <td class="mod-c">Day 1 Wrap &amp; Reflection</td>
+            <td class="det-c">Recap, open Q&amp;A, and Day 2 preview.</td>
+          </tr>
+
+          <tr class="day-divider">
+            <td colspan="3">
+              Day 2 &nbsp;&bull;&nbsp; Practical Demonstrations &amp; Hands-On
+              Exposure
+            </td>
+          </tr>
+          <tr>
+            <td class="time-c">9:30 &ndash; 9:45 AM</td>
+            <td class="mod-c">Arrival &amp; Day 1 Recap</td>
+            <td class="det-c">Tea / coffee, quick recap of Day 1 themes.</td>
+          </tr>
+          <tr>
+            <td class="time-c">9:45 &ndash; 11:15 AM</td>
+            <td class="mod-c">Demo 1: AI Workflow Automation with n8n</td>
+            <td class="det-c">
+              Live build of operational workflows, approvals, and reporting.
+            </td>
+          </tr>
+          <tr class="break-row">
+            <td colspan="3">
+              11:15 &ndash; 11:30 AM &nbsp;&bull;&nbsp; Networking Break
+            </td>
+          </tr>
+          <tr>
+            <td class="time-c">11:30 &ndash; 1:00 PM</td>
+            <td class="mod-c">
+              Demo 2: Copilot Studio Internal Banking Assistant
+            </td>
+            <td class="det-c">
+              Build-along of an enterprise AI assistant for branch and
+              back-office staff.
+            </td>
+          </tr>
+          <tr class="break-row">
+            <td colspan="3">
+              1:00 &ndash; 2:00 PM &nbsp;&bull;&nbsp; Lunch Break
+            </td>
+          </tr>
+          <tr>
+            <td class="time-c">2:00 &ndash; 3:15 PM</td>
+            <td class="mod-c">
+              Demo 3: Loan &amp; Risk Analysis with AI Agents
+            </td>
+            <td class="det-c">
+              Demo of agent driven document review, pre-credit memos, and risk
+              signals.
+            </td>
+          </tr>
+          <tr class="break-row">
+            <td colspan="3">
+              3:15 &ndash; 3:30 PM &nbsp;&bull;&nbsp; Networking Break
+            </td>
+          </tr>
+          <tr>
+            <td class="time-c">3:30 &ndash; 4:15 PM</td>
+            <td class="mod-c">
+              Demo 4: Social Media &amp; Communication Automation
+            </td>
+            <td class="det-c">
+              Brand-safe campaign drafting, public listening, and reporting
+              automation.
+            </td>
+          </tr>
+          <tr>
+            <td class="time-c">4:15 &ndash; 4:50 PM</td>
+            <td class="mod-c">Interactive: Pilot Use Case Mapping</td>
+            <td class="det-c">
+              Department-wise pilot shortlist with effort and value estimates.
+            </td>
+          </tr>
+          <tr>
+            <td class="time-c">4:50 &ndash; 5:00 PM</td>
+            <td class="mod-c">Feedback, Certification &amp; Vote of Thanks</td>
+            <td class="det-c">
+              Closing remarks, certificate distribution, group photo.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ============================ -->
+    <!-- PAGE 6: FACILITATOR -->
+    <!-- ============================ -->
+    <div class="page content-page">
+      <div class="page-header">
+        <div class="page-header-logo">
+          <img src="sng_logo_clear.png" alt="SNG" />
+        </div>
+        <div class="page-header-title">
+          Workshop on <b>Agentic AI for Banking Transformation</b>
+        </div>
+      </div>
+
+      <div class="section-h">Facilitator's Profile</div>
+
+      <div class="fac-hero">
+        <div class="fac-photo">
+          <img
+            src="https://sarojdahal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.12gv_.do4xt4m.png&w=640&q=75"
+            alt="Er. Saroj Dahal"
+            style="width: 100%; height: 100%; object-fit: cover; display: block"
+          />
+          <div class="docker-badge-top">DOCKER CAPTAIN</div>
+          <div class="fac-name-card">
+            <div class="nm">Er. Saroj Dahal</div>
+            <div class="ti">Docker Captain &amp; AI Architect</div>
+          </div>
+        </div>
+
+        <div class="fac-intro">
+          <h2>Er. Saroj Dahal</h2>
+          <div class="role">
+            Global Docker Captain &nbsp;|&nbsp; Founder, 28Softwares
+            &nbsp;|&nbsp; AI &amp; Cloud Architect
+          </div>
+          <p>
+            Saroj Dahal is a global Docker Captain and technology leader with
+            nearly a decade of expertise in full-stack development, cloud
+            architecture, and AI / ML. As the Founder of 28Softwares, he has
+            engineered high-impact AI platforms including university course
+            generation systems and diverse fintech solutions used in real
+            production environments.
+          </p>
+          <p>
+            A dedicated educator through his YouTube channel EverydayKarma and
+            his role as a Faculty Lecturer, Saroj specialises in simplifying
+            complex system designs and AI integration into actionable,
+            high-productivity workflows for professionals. He brings a rare
+            combination of deep engineering rigour, real-world product
+            experience, and the ability to translate technology for executive
+            audiences.
+          </p>
+        </div>
+      </div>
+
+      <div class="creds-strip">
+        <div class="cred-card">
+          <div class="icon">&#9875;</div>
+          <div class="v">Docker Captain</div>
+          <div class="l">Global recognition by Docker Inc.</div>
+        </div>
+        <div class="cred-card">
+          <div class="icon">&#9889;</div>
+          <div class="v">~10 Years</div>
+          <div class="l">Full-stack, Cloud &amp; AI / ML</div>
+        </div>
+        <div class="cred-card">
+          <div class="icon">&#127891;</div>
+          <div class="v">Faculty Lecturer</div>
+          <div class="l">Educator &amp; Creator (EverydayKarma)</div>
+        </div>
+      </div>
+
+      <div class="speciality-box">
+        <div class="ttl">Recent Engagement with SNG Solution</div>
+        <div class="body">
+          Er. Saroj Dahal recently delivered the workshop "Essential of AI for
+          Next-Gen Institution" organised by SNG Solution for Banks, Financial
+          Institutions, and Insurance Companies at Mercure Hotel, Sukedhara
+          Heights, Kathmandu. The workshop received strong feedback from senior
+          participants for its clarity, depth, and practical relevance to the
+          Nepali financial sector, positioning him as a trusted facilitator for
+          executive AI capacity building in BFIs.
+        </div>
+      </div>
+
+      <div class="section-h" style="margin-top: 5mm">Areas of Expertise</div>
+      <ul class="tick-list" style="columns: 2; column-gap: 8mm">
+        <li>Agentic AI &amp; multi-agent system design</li>
+        <li>Cloud architecture (Docker, Kubernetes, AWS)</li>
+        <li>Generative AI and Large Language Model integration</li>
+        <li>Workflow automation (n8n, Copilot Studio, custom agents)</li>
+        <li>Fintech product engineering &amp; AI for banking workflows</li>
+        <li>Executive enablement &amp; AI literacy for leadership teams</li>
+      </ul>
+    </div>
+
+    <!-- ============================ -->
+    <!-- PAGE 7: ABOUT SNG -->
+    <!-- ============================ -->
+    <div class="page content-page">
+      <div class="page-header">
+        <div class="page-header-logo">
+          <img src="./images/navbar/sng-logo.png" alt="SNG" />
+        </div>
+        <div class="page-header-title">
+          Workshop on <b>Agentic AI for Banking Transformation</b>
+        </div>
+      </div>
+
+      <div class="about-hero">
+        <img src="./images/navbar/sng-logo.png" alt="SNG Solution" />
+
+        <h2>About SNG Solution Pvt. Ltd.</h2>
+        <div class="tag">
+          Excellence in Capacity Building &nbsp;&bull;&nbsp; Research
+          &nbsp;&bull;&nbsp; Institutional Learning
+        </div>
+      </div>
+
+      <div class="section-h">Why Choose SNG</div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="icn">
+            <svg viewBox="0 0 24 24" fill="white">
+              <path d="M12 2L4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4z" />
+            </svg>
+          </div>
+          <h4>Expertise &amp; Credibility</h4>
+          <p>
+            Curated faculty drawn from regulators, central bank veterans,
+            industry CEOs, and leading technology experts, ensuring every
+            workshop is grounded in lived experience.
+          </p>
+        </div>
+        <div class="why-card">
+          <div class="icn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h4>Time &amp; Efficiency</h4>
+          <p>
+            Tightly designed sessions that respect executive time, delivering
+            high-density learning, practical tools, and ready-to-use frameworks
+            without filler content.
+          </p>
+        </div>
+        <div class="why-card">
+          <div class="icn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+            >
+              <path d="M3 17l6-6 4 4 8-8" />
+              <polyline points="14 7 21 7 21 14" />
+            </svg>
+          </div>
+          <h4>Access to Key Trends</h4>
+          <p>
+            Programs aligned with the latest regulatory, technology, and risk
+            trends shaping Nepal's financial sector, from agentic AI to AML,
+            governance, and digital transformation.
+          </p>
+        </div>
+        <div class="why-card">
+          <div class="icn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2.5"
+            >
+              <path d="M20 6L9 17l-5-5" />
+            </svg>
+          </div>
+          <h4>Tailored &amp; Trusted</h4>
+          <p>
+            Customised in-house engagements with banks, insurance companies, and
+            corporates, built around the institution's strategic priorities, not
+            generic off-the-shelf content.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-body">
+        "SNG Solution Pvt. Ltd. is a pioneering consultancy firm committed to
+        promoting social equity, enhancing livelihood opportunities, and
+        strengthening governance frameworks across various sectors. We empower
+        both governmental and non-governmental organisations by addressing
+        systemic inequalities and fostering inclusive growth. Through our
+        tailored consultancy services, research, and skill building programs, we
+        drive positive social impact and equip communities with the tools they
+        need for sustainable development."
+      </div>
+
+      <div class="contact-strip">
+        <div class="contact-item">
+          <div class="icn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#1e8bc3"
+              stroke-width="2"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+          </div>
+          <div class="l">Telephone</div>
+          <div class="v">
+            +977 9767-279620<br />+977 9746-961506<br />+977 9868-133073
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#1e8bc3"
+              stroke-width="2"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </div>
+          <div class="l">Email</div>
+          <div class="v">info@sngsolution.com<br />events@sngsolution.com</div>
+        </div>
+        <div class="contact-item">
+          <div class="icn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#1e8bc3"
+              stroke-width="2"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div class="l">Address</div>
+          <div class="v">
+            P89F+5H9, Trishakti Marg<br />Lazimpat-2, Kathmandu (Nepal)
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#1e8bc3"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path
+                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+              />
+            </svg>
+          </div>
+          <div class="l">Website</div>
+          <div class="v">www.sngsolution.com</div>
+        </div>
+      </div>
+
+      <div class="footer-cta">
+        For all our upcoming programs, please visit www.sngsolution.com
+      </div>
+    </div>
+  </body>
+</html>
